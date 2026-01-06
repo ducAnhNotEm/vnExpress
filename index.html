@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="bg-logo">
+        <a href="https://vnexpress.net/">
+          <img
+            src="https://s1.vnecdn.net/vnexpress/restruct/i/v9758/v2_2019/pc/graphics/logo_tagline.svg"
+            alt="anh-vnexpress"
+            id="anh"
+          />
+          <span
+            style="
+              background: url(https://s1.vnecdn.net/vnexpress/restruct/i/v9758/v2_2019/pc/graphics/bg-noel.png);
+            "
+            id="bg-noel"
+          >
+          </span>
+        </a>
+        <div class="weather-location">
+          <div class="location">
+            <div class="dropdown">
+              <span class="current">Hà Nội ▾</span>
+
+              <ul class="menu">
+                <li style="border-bottom: 1px solid #000">
+                  <p style="font-size: 18px">Xác định vị trí hiện tại</p>
+                  <p style="font-size: 12px">Vị trí hiện tại : Hà Nội</p>
+                </li>
+                <li style="border-bottom: 1px solid #000">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Tìm kiếm..."
+                      id="searchBox"
+                    />
+                  </div>
+                </li>
+                <li data-value="HN">Hà Nội</li>
+                <li data-value="HCM">Hồ Chí Minh</li>
+                <li data-value="DN">Đà Nẵng</li>
+                <li data-value="HP">Hải Phòng</li>
+                <li data-value="CT">Cần Thơ</li>
+                <li data-value="TQ">Tuyên Quang</li>
+                <li data-value="LC">Lào Cai</li>
+                <li data-value="TN">Thái Nguyên</li>
+                <li data-value="PT">Phú Thọ</li>
+                <li data-value="BN">Bắc Ninh</li>
+                <li data-value="HY">Hưng Yên</li>
+                <li data-value="NB">Ninh Bình</li>
+                <li data-value="QT">Quảng Trị</li>
+                <li data-value="QNGAI">Quảng Ngãi</li>
+                <li data-value="GL">Gia Lai</li>
+                <li data-value="KH">Khánh Hòa</li>
+                <li data-value="LD">Lâm Đồng</li>
+                <li data-value="DLAK">Đắk Lắk</li>
+                <li data-value="DNAI">Đồng Nai</li>
+                <li data-value="TNINH">Tây Ninh</li>
+                <li data-value="VL">Vĩnh Long</li>
+                <li data-value="ĐT">Đồng Tháp</li>
+                <li data-value="CM">Cà Mau</li>
+                <li data-value="AG">An Giang</li>
+                <li data-value="TPH">TP. Huế</li>
+                <li data-value="LChau">Lai Châu</li>
+                <li data-value="DB">Điện Biên</li>
+                <li data-value="SL">Sơn La</li>
+                <li data-value="LS">Lạng Sơn</li>
+                <li data-value="QNinh">Quảng Ninh</li>
+                <li data-value="TH">Thanh Hóa</li>
+                <li data-value="NA">Nghệ An</li>
+                <li data-value="HTinh">Hà Tĩnh</li>
+                <li data-value="CB">Cao Bằng</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="weather">
+            <img src="./pictures/weather.jpg" alt="" id="picWea" />
+            <span id="temp">26°C</span>
+          </div>
+        </div>
+      </div>
+      <div class="nav-bar">
+        <a href=" ">Mới nhất</a>
+        <div class="dropdown">
+          <span class="current1">Tin theo khu vực</span>
+          <ul class="menu">
+            <li><a href=" ">Hà Nội</a></li>
+            <li><a href=" ">TP.Hồ Chí Minh</a></li>
+          </ul>
+        </div>
+        <div id="international">
+          <img
+            src="./pictures/logo.png"
+            alt="logo-vnexpress"
+            id="logo-vnexpress"
+          />
+          <a href=" ">International</a>
+        </div>
+      </div>
+      <div id="loginBar">
+        <img src="./pictures/logokinh.png" alt="kinhLup" id="kinhLup" />
+        <img src="./pictures/logouser.jpg" alt="logouser" id="logouser" />
+        <a href=" ">Đăng nhập</a>
+        <img src="./pictures/logobell.jpg" alt="logobell" id="logobell" />
+      </div>
+    </header>
+
+    <main>
+      <div class="NAV">
+        <nav>
+          <a href=" ">
+            <img
+              src="./pictures/imghome.png"
+              alt=""
+              style="width: 30px; height: 30px"
+            />
+          </a>
+          <ul class="main-menu">
+            <li class="menu-item">
+              <a href="#">VnE-GO</a>
+              <ul class="sub-menu">
+                <li><a href=" ">Discover</a></li>
+                <li><a href=" ">Shorts</a></li>
+                <li><a href=" ">Podcasts</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Thời sự</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Thế giới</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Kinh doanh</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Khoa học công nghệ</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Góc nhìn</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Bất động sản</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Sức khỏe</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Thể thao</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Giải trí</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Pháp luật</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Giáo dục</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Đời sống</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Xe</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Du lịch</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Ý kiến</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Tâm sự</a>
+              <ul class="sub-menu"></ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">Thư giãn</a>
+              <ul class="sub-menu"></ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="top-story">
+        <div class="container-left">
+          <div class="left-content" style="width: 780px">
+            <a href=" ">
+              <img src="./pictures/t1.webp" alt="" style="width: 520px" />
+            </a>
+            <a href=" " class="left-content1">
+              <h2>
+                3 ngày thế giới chấn động vì vụ Mỹ bắt Tổng thống Venezuela
+              </h2>
+              <p>
+                Cuộc tập kích bất ngờ của Mỹ rạng sáng 3/1 để bắt Tổng thống
+                Maduro khiến Venezuela rung chuyển, làm dấy lên làn sóng phản
+                ứng khắp toàn cầu.
+              </p>
+              <p>
+                Khoảng 1h sáng 3/1, hàng loạt vụ nổ lớn làm rung chuyển thủ đô
+                Caracas và ...
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="container-right-aside"></div>
+      </div>
+      <div class="bottom-story">
+        <div class="bottom-container-left">
+          <div class="bottom-content bottom-left-content">
+            <a href=" "
+              ><h3>
+                Quảng Ninh, Hải Phòng tăng trưởng GRDP cao nhất cả nước
+              </h3></a
+            >
+            <a href=" ">
+              <img
+                src="./pictures/t2.webp"
+                alt=""
+                style="width: 250px; height: 150px; margin-top: 20px"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="bottom-content bottom-container-mid">
+          <a href=" "
+            ><h3>
+              Cựu Cục trưởng An toàn thực phẩm khai 'thấy sai lầm' khi nhận hối
+              lộ gần 44 tỷ đồng
+            </h3></a
+          >
+          <a href=" ">
+            <img
+              src="./pictures/t3.webp"
+              alt=""
+              style="width: 250px; height: 150px; margin-top: 20px"
+          /></a>
+        </div>
+        <div class="bottom-content bottom-container-right-aside">
+          <a href=" " style="text-decoration: none; color: rgb(220, 51, 51)"
+            ><h4>Góc nhìn</h4></a
+          >
+          <a href=" " style="text-decoration: none"
+            ><h4>Sen về trên tay bồ tát</h4></a
+          >
+          <a href=" " style="text-decoration: none"
+            ><p>
+              Pho tượng Bồ tát Tara đã trải qua một 'tiểu sử' đời thường đến đau
+              lòng.
+            </p></a
+          >
+          <div class="author">
+            <a href=" " style="text-decoration: none; color: rgb(173, 159, 159)"
+              ><i>Trương Công Tú</i></a
+            >
+            <img src="./pictures/t4.webp" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="left-news-aside"
+        style="height: 2633px; width: 400px; margin-top: 110px"
+      >
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>
+                Châu Âu ra tuyên bố chung phản đối ý tưởng sáp nhập Greenland
+                của ông Trump
+              </h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a1.webp" alt="" />
+              <p>
+                Lãnh đạo Đan Mạch, Anh, Đức, Pháp và các nước khác ra tuyên bố
+                phản đối việc Tổng thống Trump muốn sáp nhập đảo Greenland vào
+                Mỹ, kêu gọi cùng đảm bảo an ninh tại Bắc Cực.
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>
+                Từ 2026 không ghi thông tin đất đang bị thế chấp vào sổ đỏ
+              </h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a2.webp" alt="" />
+              <p>
+                Thông tin thế chấp quyền sử dụng đất, tài sản gắn liền với đất
+                sẽ không còn được ghi trực tiếp trên sổ đỏ mà được cập nhật vào
+                cơ sở dữ liệu đất đai.
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>Chủ hộ kinh doanh có thể giao bố mẹ, vợ chồng làm kế toán</h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a3.webp" alt="" />
+              <p>
+                Ngoài tự ghi chép sổ sách, chủ hộ kinh doanh có thể giao cho
+                người thân trong gia đình (vợ chồng, bố mẹ, em ruột…) đảm nhận
+                công việc kế toán.
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>Việt Nam đạt cột mốc lịch sử trước Jordan ở cấp U23</h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a4.webp" alt="" />
+              <p>
+                Arab SaudiChiến thắng 2-0 ở trận ra quân bảng A U23 châu Á 2026
+                hôm nay là lần đầu Việt Nam hạ Jordan ở cấp độ này, sau bốn cuộc
+                đối đầu.
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>Hà Nội đề nghị dừng chạy tàu qua phố cà phê đường tàu</h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a5.webp" alt="" />
+              <p>
+                UBND Hà Nội vừa đề nghị điều chỉnh tổ chức chạy tàu, trong đó
+                tàu khách từ phía nam dừng tại ga Hà Nội, tàu khách từ phía bắc
+                sẽ dừng ở ga Gia Lâm.
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>Thu ngân sách 2025 đạt kỷ lục 2,65 triệu tỷ đồng</h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a6.webp" alt="" />
+              <p>
+                Số thu ngân sách Nhà nước năm nay ghi nhận mức kỷ lục, vượt 2,65
+                triệu tỷ đồng, tương đương 20,7% quy mô nền kinh tế (GDP), theo
+                Bộ Tài chính.
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>
+                Dàn khí tài hiện đại và nghìn cảnh sát diễn tập bảo vệ Đại hội
+                Đảng
+              </h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a7.webp" alt="" />
+              <p>
+                Hà Nội Ngày 6/1, các lực lượng tinh nhuệ thuộc Bộ Công an và
+                Công an TP Hà Nội, cùng dàn xe đặc chủng, khí tài hiện đại đã
+                hội quân diễn tập, sẵn sàng bảo vệ tuyệt đối an toàn cho Đại hội
+                Đảng toàn quốc lần thứ XIV.
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>
+                Loạt nghị sĩ Venezuela bắt chước cử chỉ 'chiến thắng' của ông
+                Maduro
+              </h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a8.webp" alt="" />
+              <p>
+                Chủ tịch quốc hội Rodriguez cùng nhiều nghị sĩ Venezuela giơ hai
+                ngón tay hình chữ V, giống cử chỉ "chiến thắng" của Tổng thống
+                Maduro khi ông bị đưa đến New
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>Mỹ từ bỏ cáo buộc về 'băng đảng ma túy' Venezuela</h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a9.webp" alt="" />
+              <p>
+                Bộ Tư pháp Mỹ rút lại tuyên bố rằng Cartel de los Soles là băng
+                đảng ma túy của Venezuela, cáo buộc vốn là nền tảng cho lệnh bắt
+                Tổng thống Maduro.
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>
+                Trăm cảnh sát vây bắt đường dây lừa đảo, đánh bạc 9.300 tỷ đồng
+              </h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a10.webp" alt="" />
+              <p>
+                <i>Hưng Yên</i>-Hàng trăm cảnh sát đồng loạt đột kích các địa
+                điểm tại 5 tỉnh thành, bắt Nguyễn Chính Nghĩa và đường dây tội
+                phạm lừa đảo, đánh bạc với quy mô lên tới 9.300
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>Phát hiện bộ xương người đã khô ở Lâm Đồng</h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a11.webp" alt="" />
+              <p>
+                Bộ xương người được phát hiện nằm ở bãi đất hoang, xa khu dân
+                cư, thuộc phường Tiến Thành (TP Phan Thiết, Bình Thuận cũ), hiện
+                chưa rõ danh tính.
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>1,4 triệu thanh niên 'ba không'</h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a12.webp" alt="" />
+              <p>
+                Ba tháng cuối năm 2025, cả nước có khoảng 1,4 triệu thanh niên
+                trong tình trạng không việc làm, không học tập, không tham gia
+                đào tạo nghề, chiếm 10% tổng số thanh
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>
+                Cựu cục trưởng khai không bắt đưa tiền nhưng hỏi 'mức cảm ơn'
+                với mỗi hồ sơ
+              </h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a13.webp" alt="" />
+              <p>
+                Cựu cục trưởng An toàn thực phẩm Trần Việt Nga khai không chỉ
+                đạo chuyên viên thu tiền cơ chế mà chỉ gọi cấp dưới sang hỏi:
+                "Mỗi bộ hồ sơ có cảm ơn được lãnh đạo Cục 2 triệu đồng không?"
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>
+                Khách đập phá ôtô công nghệ sau mâu thuẫn 'trả thêm tiền vệ sinh
+                xe'
+              </h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a14.png" alt="" />
+              <p>
+                TP HCM-La Thiên Bảo, 33 tuổi, bị cáo buộc đánh tài xế, đá gãy
+                gương chiếu hậu ôtô công nghệ sau mâu thuẫn phải trả thêm tiền
+                vệ sinh xe do bạn anh ta nôn ói.
+              </p>
+            </a>
+          </div>
+        </aside>
+        <aside class="container-left-aside">
+          <div class="content-aside">
+            <a href=" ">
+              <h3>Chelsea bổ nhiệm HLV Rosenior</h3>
+            </a>
+          </div>
+          <div class="content-aside content-aside-bot">
+            <a href=" ">
+              <img src="./pictures/aside/a15.webp" alt="" />
+              <p>
+                Chelsea xác nhận ký hợp đồng với HLV 41 tuổi người Anh Liam
+                Rosenior chiều 6/1, thời hạn tới năm 2032, để thay thế Enzo
+                Maresca.
+              </p>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
