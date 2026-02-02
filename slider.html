@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="slider.css" />
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide active">
+          <h2>Slide 1</h2>
+          <p>nội dung của slide 1</p>
+        </div>
+        <div class="slide">
+          <h2>Slide 2</h2>
+          <p>Noi dung slide 2</p>
+        </div>
+        <div class="slide">
+          <h2>Slide 3</h2>
+          <p>Noi dung slide 3</p>
+        </div>
+      </div>
+      <button class="prev" onclick="ChangeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="ChangeSlide(1)">&#10095;</button>
+    </div>
+    <script src="slider.js"></script>
+  </body>
+</html>

@@ -1,10 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mail"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=cloud"
+    />
   </head>
   <body>
     <header>
@@ -15,13 +27,6 @@
             alt="anh-vnexpress"
             id="anh"
           />
-          <span
-            style="
-              background: url(https://s1.vnecdn.net/vnexpress/restruct/i/v9758/v2_2019/pc/graphics/bg-noel.png);
-            "
-            id="bg-noel"
-          >
-          </span>
         </a>
         <div class="weather-location">
           <div class="location">
@@ -81,8 +86,8 @@
           </div>
 
           <div class="weather">
-            <img src="./pictures/weather.jpg" alt="" id="picWea" />
-            <span id="temp">26°C</span>
+            <span class="material-symbols-outlined"> cloud </span>
+            <p id="temp">26°C</p>
           </div>
         </div>
       </div>
@@ -105,10 +110,23 @@
         </div>
       </div>
       <div id="loginBar">
-        <img src="./pictures/logokinh.png" alt="kinhLup" id="kinhLup" />
-        <img src="./pictures/logouser.jpg" alt="logouser" id="logouser" />
+        <img
+          src="https://media.istockphoto.com/id/1221635138/vi/vec-to/bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-k%C3%ADnh-l%C3%BAp-t%C3%ACm-ki%E1%BA%BFm.jpg?s=612x612&w=0&k=20&c=7QKaY5TcbUbgOX6X0RtrTm5SdIwomLAzfM08VNwKpUc="
+          alt="kinhLup"
+          id="kinhLup"
+        />
+        <img
+          src="https://png.pngtree.com/png-vector/20191009/ourmid/pngtree-user-icon-png-image_1796659.jpg"
+          alt="logouser"
+          id="logouser"
+        />
         <a href=" ">Đăng nhập</a>
-        <img src="./pictures/logobell.jpg" alt="logobell" id="logobell" />
+        <img
+          src="https://media.istockphoto.com/id/1598038956/vi/vec-to/bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-chu%C3%B4ng-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-vector-minh-h%E1%BB%8Da-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng.jpg?s=612x612&w=0&k=20&c=wYzwxsIVkiGbc64jmt-VlNln5qZaFdt9nLLMRZdj0T0="
+          alt="logobell"
+          id="logobell"
+          style="width: 20px; height: 20px; border-radius: 50%"
+        />
       </div>
     </header>
 
@@ -134,87 +152,210 @@
 
             <li class="menu-item">
               <a href="#">Thời sự</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Chính trị</a></li>
+                <li><a href=" ">Nhân sự</a></li>
+                <li><a href=" ">Kỉ nguyên mới</a></li>
+                <li><a href=" ">Dân sinh</a></li>
+                <li><a href=" ">Làm việc</a></li>
+                <li><a href=" ">Giao thông</a></li>
+                <li><a href=" ">Quỹ hi vọng</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Thế giới</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Phân tích</a></li>
+                <li><a href=" ">Tư liệu</a></li>
+                <li><a href=" ">Quân sự</a></li>
+                <li><a href=" ">Cuộc sống đó đây</a></li>
+                <li><a href=" ">Người Việt 5 Châu</a></li>
+                <li><a href=" ">Bắc Mỹ</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Kinh doanh</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">NetZero</a></li>
+                <li><a href=" ">Quốc tế</a></li>
+                <li><a href=" ">Doanh nghiệp</a></li>
+                <li><a href=" ">Chứng khoán</a></li>
+                <li><a href=" ">Ebank</a></li>
+                <li><a href=" ">Vĩ mô</a></li>
+                <li><a href=" ">Tiền của tôi</a></li>
+                <li><a href=" ">Hàng hóa</a></li>
+                <li><a href=" ">Kinh tế vùng</a></li>
+                <li><a href=" ">Doanh nghiệp vươn mình</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Khoa học công nghệ</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Hoạt động Bộ KH&CN</a></li>
+                <li><a href=" ">Chuyển đổi số</a></li>
+                <li><a href=" ">Đổi mới sáng tạo</a></li>
+                <li><a href=" ">AI</a></li>
+                <li><a href=" ">Vũ trụ</a></li>
+                <li><a href=" ">Thế giới tự nhiên</a></li>
+                <li><a href=" ">Thiết bị</a></li>
+                <li><a href=" ">Cửa sổ tri thức</a></li>
+                <li><a href=" ">Tech Awards 2025</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Góc nhìn</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Chính trị & chính sách</a></li>
+                <li><a href=" ">Y tế & sức khỏe</a></li>
+                <li><a href=" ">Kinh doanh & quản trị</a></li>
+                <li><a href=" ">Giáo dục & tri thức</a></li>
+                <li><a href=" ">Môi trường</a></li>
+                <li><a href=" ">Văn hóa & lối sống</a></li>
+                <li><a href=" ">Tác giả</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Bất động sản</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Chính sách</a></li>
+                <li><a href=" ">Thị trường</a></li>
+                <li><a href=" ">Dự án</a></li>
+                <li><a href=" ">Không gian sống</a></li>
+                <li><a href=" ">Tư vấn</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Sức khỏe</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Tin tức</a></li>
+                <li><a href=" ">Các bệnh</a></li>
+                <li><a href=" ">Sống khỏe</a></li>
+                <li><a href=" ">Vaccine</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Thể thao</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">U23 Châu Á 2026</a></li>
+                <li><a href=" ">Bóng đá</a></li>
+                <li><a href=" ">Lịch thi đấu</a></li>
+                <li><a href=" ">Marathon</a></li>
+                <li><a href=" ">Tennis</a></li>
+                <li><a href=" ">Các môn khác</a></li>
+                <li><a href=" ">Hậu trường</a></li>
+                <li><a href=" ">Ảnh</a></li>
+                <li><a href=" ">Video</a></li>
+                <li><a href=" ">Esports</a></li>
+                <li><a href=" ">Fan</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Giải trí</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Giới sao</a></li>
+                <li><a href=" ">Sách</a></li>
+                <li><a href=" ">Video</a></li>
+                <li><a href=" ">Phim</a></li>
+                <li><a href=" ">Nhạc</a></li>
+                <li><a href=" ">Thời trang</a></li>
+                <li><a href=" ">Làm đẹp</a></li>
+                <li><a href=" ">Sân khấu - Mỹ thuật</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Pháp luật</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Hồ sơ phá án</a></li>
+                <li><a href=" ">Tư vấn</a></li>
+                <li><a href=" ">Video</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Giáo dục</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Tin tức</a></li>
+                <li><a href=" ">Tuyển sinh</a></li>
+                <li><a href=" ">Chân dung</a></li>
+                <li><a href=" ">Du học</a></li>
+                <li><a href=" ">Thảo luận</a></li>
+                <li><a href=" ">Học tiếng Anh</a></li>
+                <li><a href=" ">Giáo dục 4.0</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Đời sống</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Nhịp sống</a></li>
+                <li><a href=" ">Tổ ấm</a></li>
+                <li><a href=" ">Bài học sống</a></li>
+                <li><a href=" ">Cooking</a></li>
+                <li><a href=" ">Tiêu dùng</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Xe</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Thị trường</a></li>
+                <li><a href=" ">Xe điện</a></li>
+                <li><a href=" ">Diễn đàn</a></li>
+                <li><a href=" ">Car Awards 2025</a></li>
+                <li><a href=" ">V-Car</a></li>
+                <li><a href=" ">V-Bike</a></li>
+                <li><a href=" ">Cảm lái</a></li>
+                <li><a href=" ">Thi lý thuyết</a></li>
+                <li><a href=" ">Thi mô phỏng</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Du lịch</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Điểm đến</a></li>
+                <li><a href=" ">Ẩm thực</a></li>
+                <li><a href=" ">Dấu chân</a></li>
+                <li><a href=" ">Tư vấn</a></li>
+                <li><a href=" ">Cẩm nang</a></li>
+                <li><a href=" ">Ảnh</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Ý kiến</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Thời sự</a></li>
+                <li><a href=" ">Đời sống</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Tâm sự</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Hẹn hò</a></li>
+              </ul>
             </li>
 
             <li class="menu-item">
               <a href="#">Thư giãn</a>
-              <ul class="sub-menu"></ul>
+              <ul class="sub-menu">
+                <li><a href=" ">Cười</a></li>
+                <li><a href=" ">Đố vui</a></li>
+                <li><a href=" ">Chuyện lạ</a></li>
+                <li><a href=" ">Crossword</a></li>
+                <li><a href=" ">Thú cưng</a></li>
+                <li><a href=" ">Trò chơi</a></li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -298,288 +439,2273 @@
         </div>
       </div>
 
-      <div
-        class="left-news-aside"
-        style="height: 2633px; width: 400px; margin-top: 110px"
-      >
-        <aside class="container-left-aside">
-          <div class="content-aside">
+      <div class="medium-news">
+        <div
+          class="left-news-aside"
+          style="height: 2633px; width: 400px; margin-top: 110px"
+        >
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>
+                  Châu Âu ra tuyên bố chung phản đối ý tưởng sáp nhập Greenland
+                  của ông Trump
+                </h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a1.webp" alt="" />
+                <p>
+                  Lãnh đạo Đan Mạch, Anh, Đức, Pháp và các nước khác ra tuyên bố
+                  phản đối việc Tổng thống Trump muốn sáp nhập đảo Greenland vào
+                  Mỹ, kêu gọi cùng đảm bảo an ninh tại Bắc Cực.
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>
+                  Từ 2026 không ghi thông tin đất đang bị thế chấp vào sổ đỏ
+                </h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a2.webp" alt="" />
+                <p>
+                  Thông tin thế chấp quyền sử dụng đất, tài sản gắn liền với đất
+                  sẽ không còn được ghi trực tiếp trên sổ đỏ mà được cập nhật
+                  vào cơ sở dữ liệu đất đai.
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>
+                  Chủ hộ kinh doanh có thể giao bố mẹ, vợ chồng làm kế toán
+                </h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a3.webp" alt="" />
+                <p>
+                  Ngoài tự ghi chép sổ sách, chủ hộ kinh doanh có thể giao cho
+                  người thân trong gia đình (vợ chồng, bố mẹ, em ruột…) đảm nhận
+                  công việc kế toán.
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>Việt Nam đạt cột mốc lịch sử trước Jordan ở cấp U23</h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a4.webp" alt="" />
+                <p>
+                  Arab SaudiChiến thắng 2-0 ở trận ra quân bảng A U23 châu Á
+                  2026 hôm nay là lần đầu Việt Nam hạ Jordan ở cấp độ này, sau
+                  bốn cuộc đối đầu.
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>Hà Nội đề nghị dừng chạy tàu qua phố cà phê đường tàu</h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a5.webp" alt="" />
+                <p>
+                  UBND Hà Nội vừa đề nghị điều chỉnh tổ chức chạy tàu, trong đó
+                  tàu khách từ phía nam dừng tại ga Hà Nội, tàu khách từ phía
+                  bắc sẽ dừng ở ga Gia Lâm.
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>Thu ngân sách 2025 đạt kỷ lục 2,65 triệu tỷ đồng</h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a6.webp" alt="" />
+                <p>
+                  Số thu ngân sách Nhà nước năm nay ghi nhận mức kỷ lục, vượt
+                  2,65 triệu tỷ đồng, tương đương 20,7% quy mô nền kinh tế
+                  (GDP), theo Bộ Tài chính.
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>
+                  Dàn khí tài hiện đại và nghìn cảnh sát diễn tập bảo vệ Đại hội
+                  Đảng
+                </h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a7.webp" alt="" />
+                <p>
+                  Hà Nội Ngày 6/1, các lực lượng tinh nhuệ thuộc Bộ Công an và
+                  Công an TP Hà Nội, cùng dàn xe đặc chủng, khí tài hiện đại đã
+                  hội quân diễn tập, sẵn sàng bảo vệ tuyệt đối an toàn cho Đại
+                  hội Đảng toàn quốc lần thứ XIV.
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>
+                  Loạt nghị sĩ Venezuela bắt chước cử chỉ 'chiến thắng' của ông
+                  Maduro
+                </h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a8.webp" alt="" />
+                <p>
+                  Chủ tịch quốc hội Rodriguez cùng nhiều nghị sĩ Venezuela giơ
+                  hai ngón tay hình chữ V, giống cử chỉ "chiến thắng" của Tổng
+                  thống Maduro khi ông bị đưa đến New
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>Mỹ từ bỏ cáo buộc về 'băng đảng ma túy' Venezuela</h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a9.webp" alt="" />
+                <p>
+                  Bộ Tư pháp Mỹ rút lại tuyên bố rằng Cartel de los Soles là
+                  băng đảng ma túy của Venezuela, cáo buộc vốn là nền tảng cho
+                  lệnh bắt Tổng thống Maduro.
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>
+                  Trăm cảnh sát vây bắt đường dây lừa đảo, đánh bạc 9.300 tỷ
+                  đồng
+                </h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a10.webp" alt="" />
+                <p>
+                  <i>Hưng Yên</i>-Hàng trăm cảnh sát đồng loạt đột kích các địa
+                  điểm tại 5 tỉnh thành, bắt Nguyễn Chính Nghĩa và đường dây tội
+                  phạm lừa đảo, đánh bạc với quy mô lên tới 9.300
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>Phát hiện bộ xương người đã khô ở Lâm Đồng</h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a11.webp" alt="" />
+                <p>
+                  Bộ xương người được phát hiện nằm ở bãi đất hoang, xa khu dân
+                  cư, thuộc phường Tiến Thành (TP Phan Thiết, Bình Thuận cũ),
+                  hiện chưa rõ danh tính.
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>1,4 triệu thanh niên 'ba không'</h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a12.webp" alt="" />
+                <p>
+                  Ba tháng cuối năm 2025, cả nước có khoảng 1,4 triệu thanh niên
+                  trong tình trạng không việc làm, không học tập, không tham gia
+                  đào tạo nghề, chiếm 10% tổng số thanh
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>
+                  Cựu cục trưởng khai không bắt đưa tiền nhưng hỏi 'mức cảm ơn'
+                  với mỗi hồ sơ
+                </h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a13.webp" alt="" />
+                <p>
+                  Cựu cục trưởng An toàn thực phẩm Trần Việt Nga khai không chỉ
+                  đạo chuyên viên thu tiền cơ chế mà chỉ gọi cấp dưới sang hỏi:
+                  "Mỗi bộ hồ sơ có cảm ơn được lãnh đạo Cục 2 triệu đồng không?"
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>
+                  Khách đập phá ôtô công nghệ sau mâu thuẫn 'trả thêm tiền vệ
+                  sinh xe'
+                </h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a14.png" alt="" />
+                <p>
+                  TP HCM-La Thiên Bảo, 33 tuổi, bị cáo buộc đánh tài xế, đá gãy
+                  gương chiếu hậu ôtô công nghệ sau mâu thuẫn phải trả thêm tiền
+                  vệ sinh xe do bạn anh ta nôn ói.
+                </p>
+              </a>
+            </div>
+          </aside>
+          <aside class="container-left-aside">
+            <div class="content-aside">
+              <a href=" ">
+                <h3>Chelsea bổ nhiệm HLV Rosenior</h3>
+              </a>
+            </div>
+            <div class="content-aside content-aside-bot">
+              <a href=" ">
+                <img src="./pictures/aside/a15.webp" alt="" />
+                <p>
+                  Chelsea xác nhận ký hợp đồng với HLV 41 tuổi người Anh Liam
+                  Rosenior chiều 6/1, thời hạn tới năm 2032, để thay thế Enzo
+                  Maresca.
+                </p>
+              </a>
+            </div>
+          </aside>
+        </div>
+
+        <div class="right-news-medium">
+          <div class="right-news-medium-container">
+            <div class="right-news-medium-contents">
+              <ul class="right-news-medium-menu">
+                <li><a href=" "> Kinh doanh </a></li>
+                <li><a href=" ">Quốc tế</a></li>
+                <li><a href=" ">Doanh nghiệp</a></li>
+                <li><a href=" ">Hàng hóa</a></li>
+                <li><a href=" ">Vĩ mô</a></li>
+                <li><a href=" ">Ebank</a></li>
+                <li><a href=" ">Hậu trường kinh doanh</a></li>
+              </ul>
+            </div>
+            <div class="right-news-medium-contents1">
+              <div class="content-m1">
+                <img src="./pictures/medium/m1.webp" alt="" />
+                <div>
+                  <a href=" "
+                    ><h3>
+                      Tăng hạn mức giao dịch Mobile Money lên 100 triệu mỗi
+                      tháng
+                    </h3></a
+                  >
+                  <a href=" "
+                    ><p>
+                      Hạn mức giao dịch Mobile Money được tăng lên 100 triệu
+                      đồng mỗi tháng, gấp 10 lần mức áp dụng trước đó, theo ...
+                    </p></a
+                  >
+                </div>
+              </div>
+              <div class="content-m2">
+                <a href=" "
+                  ><h3>Đề xuất Kho bạc được nới hạn mức gửi tiền dịp Tết</h3></a
+                >
+                <a href=" "
+                  ><p>
+                    Bộ Tài chính đề xuất Kho bạc có thể tăng hạn mức gửi tiền
+                    nhàn rỗi tại ngân hàng thương mại, nhằm cải ...
+                  </p></a
+                >
+              </div>
+            </div>
+            <br />
+            <hr />
+            <div class="right-news-medium-contents2">
+              <ul class="sub-news-medium">
+                <li>
+                  <a href=" "
+                    ><h3>
+                      Chính phủ Mỹ có thể phải hoàn 133 tỷ USD thuế nhập khẩu
+                      nếu thua kiện
+                    </h3></a
+                  >
+                </li>
+                <li>
+                  <a href=" "><h3>BIDV lãi kỷ lục hơn 36.000 tỷ đồng</h3></a>
+                </li>
+                <li>
+                  <a href=" "
+                    ><h3>
+                      Venezuela từng chuyển hơn 100 tấn vàng tới Thụy Sĩ
+                    </h3></a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="right-news-medium-contents3">
+              <div class="rates-bar" aria-label="Giá vàng SJC">
+                <a href="#" class="rates-title">Giá vàng SJC »</a>
+                <a href="#" class="rate-item">
+                  <p class="term">Mua:</p>
+                  <p><strong>156,3 triệu đồng/lượng</strong></p>
+                </a>
+                <a href="#" class="rate-item">
+                  <p class="term">Bán:</p>
+                  <p><strong>158,3 triệu đồng/lượng</strong></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="right-news-medium-contents4">
+              <div class="mini-cards">
+                <a href="#" class="mini-card">
+                  <div class="mini-card-img">
+                    <img
+                      src="./pictures/medium/m4.png"
+                      alt="logo"
+                      class="card-badge"
+                    />
+                    <img
+                      src="./pictures/medium/m2.webp"
+                      alt="thumb"
+                      class="card-thumb"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">Doanh nghiệp ▸</div>
+                    <h4>
+                      Thương mại điện tử Việt dự báo đạt 70 tỷ USD vào năm 2030
+                    </h4>
+                  </div>
+                </a>
+                <a href="#" class="mini-card">
+                  <div class="mini-card-img">
+                    <img
+                      src="./pictures/medium/m5.png"
+                      alt="logo"
+                      class="card-badge"
+                    />
+                    <img
+                      src="./pictures/medium/m3.webp"
+                      alt="thumb"
+                      class="card-thumb"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">NetZero ▸</div>
+                    <h4>Việt Nam lần đầu có quy chuẩn khí thải xe máy</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <br />
+            <hr />
+            <div class="right-news-medium-contents" style="margin-top: 15px">
+              <ul class="right-news-medium-menu">
+                <li><a href=" "> Bất động sản </a></li>
+                <li><a href=" ">Chính sách</a></li>
+                <li><a href=" ">Thị trường</a></li>
+                <li><a href=" ">Dự án</a></li>
+                <li><a href=" ">Không gian sống</a></li>
+                <li><a href=" ">Tư vấn</a></li>
+              </ul>
+            </div>
+            <div class="right-news-medium-contents1">
+              <div class="content-m1">
+                <img src="./pictures/medium/m6.webp" alt="" />
+                <div>
+                  <a href=" "
+                    ><h3>
+                      Hà Nội chuyển đổi gần 5.000 m2 đất Phạm Hùng làm tòa căn
+                      hộ, khách sạn
+                    </h3></a
+                  >
+                  <a href=" "
+                    ><p>
+                      Gần 5.000 m2 đất tại mặt đường Phạm Hùng của Công ty Cơ
+                      điện lạnh Eresson được chuyển đổi mục đích sử dụng làm ...
+                    </p></a
+                  >
+                </div>
+              </div>
+              <div class="content-m2">
+                <a href=" "
+                  ><h3>
+                    Khánh Hòa có thêm khu nhà ở xã hội hơn 1.300 tỷ đồng
+                  </h3></a
+                >
+                <a href=" "
+                  ><p>
+                    Dự án Nhà ở xã hội Hưng Phú 2, phường Bắc Nha Trang, tổng
+                    vốn đầu tư hơn 1.300 tỷ đồng được khởi công ...
+                  </p></a
+                >
+              </div>
+            </div>
+            <br />
+            <hr />
+            <div class="right-news-medium-contents2">
+              <ul class="sub-news-medium">
+                <li>
+                  <a href=" "
+                    ><h3>
+                      Gần 2,4 triệu tỷ đồng từ các dự án bất động sản chờ khơi
+                      thông
+                    </h3></a
+                  >
+                </li>
+                <li>
+                  <a href=" "
+                    ><h3>
+                      Biến ban công 10 m2 thành khu vườn nhỏ trong căn hộ 113 m2
+                    </h3></a
+                  >
+                </li>
+                <li>
+                  <a href=" "
+                    ><h3>
+                      Giá căn hộ TP HCM tăng thêm 9-13% quý cuối năm 2025
+                    </h3></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <br />
+            <hr />
+            <div class="right-news-medium-contents" style="margin-top: 15px">
+              <ul class="right-news-medium-menu">
+                <li><a href=" "> Thể thao </a></li>
+                <li><a href=" ">Bóng đá</a></li>
+                <li><a href=" ">Tennis</a></li>
+                <li><a href=" ">Marathon</a></li>
+                <li><a href=" ">Lịch sử đấu</a></li>
+                <li><a href=" ">V-League</a></li>
+                <li><a href=" ">U23 Châu Á 2026</a></li>
+              </ul>
+            </div>
+            <div class="right-news-medium-contents1">
+              <div class="content-m1">
+                <img src="./pictures/medium/m7.webp" alt="" />
+                <div>
+                  <a href=" "
+                    ><h3>
+                      LĐBĐ Kyrgyzstan: 'U23 Việt Nam kiên cường bậc nhất châu Á'
+                    </h3></a
+                  >
+                  <a href=" "
+                    ><p>
+                      Arab Saudi-LĐBĐ Kyrgyzstan đánh giá Việt Nam là thử thách
+                      lớn ở lượt hai bảng A vòng chung kết U23 châu Á ...
+                    </p></a
+                  >
+                </div>
+              </div>
+              <div class="content-m2">
+                <a href=" "><h3>8 điểm nhấn vòng 21 Ngoại hạng Anh</h3></a>
+                <a href=" "
+                  ><p>
+                    Vấn đề tâm lý của Arsenal, Man Utd lại lỡ cơ hội vào top 4
+                    hay HLV Tottenham cầm cốc in logo Arsenal nằm trong danh
+                    sách điểm nhấn ...
+                  </p></a
+                >
+              </div>
+            </div>
+            <br />
+            <hr />
+            <div class="right-news-medium-contents2">
+              <ul class="sub-news-medium">
+                <li>
+                  <a href=" "
+                    ><h3>
+                      ESPN: 'Amorim biết kết quả từ khi nhìn cầu thủ buộc dây
+                      giày'
+                    </h3></a
+                  >
+                </li>
+                <li>
+                  <a href=" "
+                    ><h3>
+                      Việt Nam - Kyrgyzstan: Giải mã tân binh của VCK U23 châu Á
+                    </h3></a
+                  >
+                </li>
+                <li>
+                  <a href=" "
+                    ><h3>
+                      Những điều được chờ đợi của tennis thế giới 2026
+                    </h3></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="right-news-medium-contents5">
+              <div class="sport-bar">
+                <div class="match-time">
+                  <a href=" ">Ngày mai, 00:30</a>
+                  <div class="FClub">
+                    <img src="./pictures/medium/FC1.png" alt="" />
+                    <span>AI Kholood</span>
+                  </div>
+                  <div class="FClub FClub2">
+                    <img src="./pictures/medium/FC2.png" alt="" />
+                    <span>AI-Ittihad FC</span>
+                  </div>
+                </div>
+                <div class="match-time">
+                  <a href=" ">Ngày mai, 00:30</a>
+                  <div class="FClub">
+                    <img src="./pictures/medium/FC1.png" alt="" />
+                    <span>AI Kholood</span>
+                  </div>
+                  <div class="FClub FClub2">
+                    <img src="./pictures/medium/FC2.png" alt="" />
+                    <span>AI-Ittihad FC</span>
+                  </div>
+                </div>
+                <div class="match-time">
+                  <a href=" ">Ngày mai, 00:30</a>
+                  <div class="FClub">
+                    <img src="./pictures/medium/FC1.png" alt="" />
+                    <span>AI Kholood</span>
+                  </div>
+                  <div class="FClub FClub2">
+                    <img src="./pictures/medium/FC2.png" alt="" />
+                    <span>AI-Ittihad FC</span>
+                  </div>
+                </div>
+                <div class="match-time">
+                  <a href=" ">Ngày mai, 00:30</a>
+                  <div class="FClub">
+                    <img src="./pictures/medium/FC1.png" alt="" />
+                    <span>AI Kholood</span>
+                  </div>
+                  <div class="FClub FClub2">
+                    <img src="./pictures/medium/FC2.png" alt="" />
+                    <span>AI-Ittihad FC</span>
+                  </div>
+                </div>
+                <div class="match-time">
+                  <a href=" ">Ngày mai, 00:30</a>
+                  <div class="FClub">
+                    <img src="./pictures/medium/FC1.png" alt="" />
+                    <span>AI Kholood</span>
+                  </div>
+                  <div class="FClub FClub2">
+                    <img src="./pictures/medium/FC2.png" alt="" />
+                    <span>AI-Ittihad FC</span>
+                  </div>
+                </div>
+                <div class="match-time">
+                  <a href=" ">Ngày mai, 00:30</a>
+                  <div class="FClub">
+                    <img src="./pictures/medium/FC1.png" alt="" />
+                    <span>AI Kholood</span>
+                  </div>
+                  <div class="FClub FClub2">
+                    <img src="./pictures/medium/FC2.png" alt="" />
+                    <span>AI-Ittihad FC</span>
+                  </div>
+                </div>
+                <div class="match-time">
+                  <a href=" ">Ngày mai, 00:30</a>
+                  <div class="FClub">
+                    <img src="./pictures/medium/FC1.png" alt="" />
+                    <span>AI Kholood</span>
+                  </div>
+                  <div class="FClub FClub2">
+                    <img src="./pictures/medium/FC2.png" alt="" />
+                    <span>AI-Ittihad FC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="right-news-medium-contents-container">
+              <div class="right-news-medium-contents" style="margin-top: 15px">
+                <ul class="right-news-medium-menu">
+                  <li><a href=" ">Giải trí </a></li>
+                  <li><a href=" ">Giới sao</a></li>
+                  <li><a href=" ">Phim</a></li>
+                  <li><a href=" ">Nhạc</a></li>
+                  <li><a href=" ">Thời trang</a></li>
+                </ul>
+                <div class="right-news-medium-contents1">
+                  <div class="content-m1 content-m12">
+                    <img src="./pictures/medium/m9.webp" alt="" />
+                    <div>
+                      <a href=" "
+                        ><h3>
+                          Hậu trường Lưu Diệc Phi đóng 'Thiên Long Bát Bộ'
+                        </h3></a
+                      >
+                      <a href=" "
+                        ><p>
+                          Cảnh diễn viên Trung Quốc Lưu Diệc Phi đóng "Thiên
+                          Long Bát Bộ" năm cô 15 tuổi ...
+                        </p></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <br /><br />
+                <hr style="width: 155%" />
+                <div
+                  class="right-news-medium-contents2"
+                  style="margin-top: 30px"
+                >
+                  <ul class="sub-news-medium">
+                    <li>
+                      <a href=" "
+                        ><h3>
+                          Chàng trai 9x vẽ Sơn Tùng M-TP, Soobin bằng bút bi gây
+                          sốt
+                        </h3></a
+                      >
+                    </li>
+                    <li>
+                      <a href=" "><h3>Phong cách Hồ Ngọc Hà qua 25 năm</h3></a>
+                    </li>
+                    <li>
+                      <a href=" "
+                        ><h3>Hôn nhân 10 năm của Quang Tuấn - Linh Phi</h3></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="content-m3">
+                <a
+                  href=" "
+                  style="
+                    color: red;
+                    font-size: 16px;
+                    font-family: Arial, Helvetica, sans-serif;
+                  "
+                  ><b>Sách</b></a
+                >
+                <div class="title-content-m3">
+                  <a href=" "
+                    ><h3>
+                      Giữa trận đồ ma túy (kỳ 1): Triệt phá đường dây trị giá
+                      1.400 tỷ đồng
+                    </h3></a
+                  >
+                  <a href=" "
+                    ><p>
+                      Tướng Nguyễn Văn Viện cùng lực lượng C04 ngày đêm điều
+                      tra, truy vết chân ...
+                    </p></a
+                  >
+                </div>
+              </div>
+            </div>
+            <br />
+            <hr />
+            <div class="right-news-medium-contents-container">
+              <div class="right-news-medium-contents" style="margin-top: 15px">
+                <ul class="right-news-medium-menu">
+                  <li><a href=" ">Sức khỏe </a></li>
+                  <li><a href=" ">Tin tức</a></li>
+                  <li><a href=" ">Sức khỏe</a></li>
+                  <li><a href=" ">Vaccine</a></li>
+                </ul>
+                <div
+                  class="right-news-medium-contents1 right-news-medium-contents12"
+                >
+                  <div class="content-m1 content-m12">
+                    <img src="./pictures/medium/m10.webp" alt="" />
+                    <div>
+                      <a href=" "
+                        ><h3>Sinh thiết khiến ung thư nặng hơn?</h3></a
+                      >
+                      <a href=" "
+                        ><p>
+                          Nhiều người cho rằng sinh thiết là dùng kim chọc vào
+                          khối u khiến tế bào ung thư bị vỡ, lan rộng và bệnh
+                          nặng ...
+                        </p></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <br /><br />
+                <hr style="width: 95%" />
+                <div class="right-news-medium-contents6">
+                  <ul class="sub-news-medium sub-news-medium1">
+                    <li style="margin-bottom: 30px">
+                      <a href=" "><h3>Bé 3 tuổi bị ung thư tinh hoàn</h3></a>
+                    </li>
+                    <li>
+                      <a href=" "><h3>Ai nên hạn chế ăn tỏi?</h3></a>
+                    </li>
+                  </ul>
+                  <ul class="sub-news-medium sub-news-medium1">
+                    <li style="margin-bottom: 30px">
+                      <a href=" "
+                        ><h3>Chăm sóc môi đúng cách khi hanh khô</h3></a
+                      >
+                    </li>
+                    <li>
+                      <a href=" "
+                        ><h3>Vì sao nên ăn khoai tây thường xuyên?</h3></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="content-m4">
+                <a
+                  href=" "
+                  style="
+                    color: black;
+                    font-size: 16px;
+                    font-family: Arial, Helvetica, sans-serif;
+                  "
+                  ><b>Các bệnh</b></a
+                >
+                <div class="title-content-m4">
+                  <div>
+                    <a href=" ">
+                      <h3 style="margin-top: -5px">
+                        Vì sao đột quỵ thường xảy ra khi thời tiết lạnh?
+                      </h3>
+                    </a>
+                    <img
+                      src="./pictures/medium/m11.webp"
+                      alt=""
+                      style="width: 88px; height: 53px; margin-top: 8px"
+                    />
+                  </div>
+                  <p>Thời tiết lạnh khiến mạch máu co lại, máu đặc ...</p>
+                  <hr />
+                  <div>
+                    <a href="">
+                      <p>Đau lưng do căng cơ khác bệnh cột sống thế nào</p>
+                    </a>
+                    <hr />
+                    <a href="">
+                      <p>Dấu hiệu ở da và tóc cảnh báo thiếu dinh dưỡng</p>
+                    </a>
+                    <hr />
+                    <a href="">
+                      <p>Làm gì phục hồi cơ sàn chậu sau sinh?</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div class="handbook">
+              <h3 style="font-size: 17px; margin-right: 13px; color: #cac2c2">
+                Cẩm nang
+              </h3>
+              <a href=""> <p>Hô hấp</p> </a>
+              <a href=""> <p>Tai mũi họng</p> </a>
+              <a href=""> <p>Da liễu</p> </a
+              ><a href="">
+                <p>Tiêu hóa</p>
+              </a>
+              <a href="">
+                <p>Cơ xương khớp</p>
+              </a>
+              <a href=""> <p>Tim mạch</p> </a><a href=""> <p>Nội tiết</p> </a
+              ><a href=""> <p>Ung thư</p> </a><a href=""> <p>Dinh dưỡng</p> </a
+              ><a href=""> <p>Thần kinh</p> </a><a href=""> <p>Hiếm muộn</p> </a
+              ><a href=""> <p>Nhi-Sơ sinh</p> </a
+              ><a href=""> <p>Sản phụ khoa</p> </a
+              ><a href=""> <p>Tiết niệu-Nam học</p> </a
+              ><a href="">
+                <p>Nhãn khoa</p>
+              </a>
+            </div>
+            <br />
+            <hr />
+
+            <div class="right-news-medium-contents" style="margin-top: 15px">
+              <ul class="right-news-medium-menu">
+                <li><a href=" ">Đời sống</a></li>
+                <li><a href=" ">Bài học</a></li>
+                <li><a href=" ">Tổ ấm</a></li>
+                <li><a href=" ">Tiêu dùng</a></li>
+                <li><a href=" ">Cooking</a></li>
+              </ul>
+            </div>
+            <div class="right-news-medium-contents1">
+              <div class="content-m1">
+                <img src="./pictures/medium/m12.webp" alt="" />
+                <div>
+                  <a href=" "><h3>4 sai lầm khiến cá càng rửa càng tanh</h3></a>
+                  <a href=" "
+                    ><p>
+                      Nhiều người tin rằng rửa kỹ dưới vòi nước hoặc ngâm giấm
+                      sẽ hết tanh, nhưng thực tế cách làm sai trình tự này có
+                      thể khiến mùi hôi lan rộng ...
+                    </p></a
+                  >
+                </div>
+              </div>
+              <div class="content-m2">
+                <a href=" "
+                  ><h3>Nhiều nam giới Mỹ ngại rời vòng tay cha mẹ</h3></a
+                >
+                <a href=" "
+                  ><p>
+                    Áp lực kinh tế và nỗi lo bạo lực khiến ngày càng nhiều nam
+                    giới Mỹ chọn làm "trad son" - những người con trai sống cùng
+                    và được cha ...
+                  </p></a
+                >
+              </div>
+            </div>
+            <br />
+            <hr />
+            <div class="right-news-medium-contents2">
+              <ul class="sub-news-medium">
+                <li>
+                  <a href=" "
+                    ><h3>Giới siêu giàu Trung Quốc bán nhà, gom vàng</h3></a
+                  >
+                </li>
+                <li>
+                  <a href=" "
+                    ><h3>
+                      Người phụ nữ gốc Việt kiếm 9 triệu USD nhờ món quà vặt
+                      tuổi thơ
+                    </h3></a
+                  >
+                </li>
+                <li>
+                  <a href=" "
+                    ><h3>Cái giá phải trả khi ép cơ thể dậy lúc 5h</h3></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <br />
+            <hr />
+
+            <div class="right-news-medium-contents" style="margin-top: 15px">
+              <ul class="right-news-medium-menu">
+                <li><a href=" ">Giáo dục</a></li>
+                <li><a href=" ">Tin tức</a></li>
+                <li><a href=" ">Tuyển sinh</a></li>
+                <li><a href=" ">Chân dung</a></li>
+                <li><a href=" ">Du học</a></li>
+                <li><a href=" ">Giáo dục 4.0</a></li>
+                <li><a href=" ">Trắc nghiệm</a></li>
+              </ul>
+            </div>
+            <div class="right-news-medium-contents1">
+              <div class="content-m1">
+                <img src="./pictures/medium/m13.webp" alt="" />
+                <div>
+                  <a href=" "
+                    ><h3>Máy bay nào có biệt danh 'Ngày tận thế'?</h3></a
+                  >
+                  <a href=" "
+                    ><p>
+                      Máy bay này được thiết kế để duy trì hoạt động của chính
+                      phủ Mỹ trong các tình huống khẩn cấp, gồm cả chiến tranh
+                      hạt nhân.
+                    </p></a
+                  >
+                </div>
+              </div>
+              <div class="content-m2">
+                <a href=" "><h3>Làn sóng từ bỏ giấc mơ du học Mỹ</h3></a>
+                <a href=" "
+                  ><p>
+                    Học phí cao ngất ngưởng, chính sách visa thắt chặt và nỗi lo
+                    thất nghiệp khiến 'giấc mơ Mỹ' mất dần sức hút với nhiều phụ
+                    huynh và ...
+                  </p></a
+                >
+              </div>
+            </div>
+            <br />
+            <hr />
+            <div class="right-news-medium-contents2">
+              <ul class="sub-news-medium">
+                <li>
+                  <a href=" "
+                    ><h3>
+                      Nghịch lý giáo viên hợp đồng 10-20 năm vẫn đứng ngoài biên
+                      chế
+                    </h3></a
+                  >
+                </li>
+                <li>
+                  <a href=" "
+                    ><h3>
+                      Đại học Khoa học Tự nhiên xóa sổ 11 tổ hợp, tăng học phí
+                    </h3></a
+                  >
+                </li>
+                <li>
+                  <a href=" "
+                    ><h3>Công thức 'ra lệnh' cho AI với giáo viên</h3></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br /><br />
+      <div class="container">
+        <div class="NAV1">
+          <a
+            href=" "
+            style="
+              color: rgb(134, 116, 40);
+              font-size: 23px;
+              /* font-weight: 700; */
+              text-decoration: none;
+            "
+            ><h2 style="width: 310px; margin-top: 10px; margin-left: 10px">
+              Khoa học công nghệ
+            </h2></a
+          >
+
+          <div class="NAV1-menu">
+            <a href=""> <p>Chuyển đổi số</p> </a
+            ><a href=""> <p>Đổi mới sáng tạo</p> </a><a href=""> <p>AI</p> </a
+            ><a href=""> <p>Vũ trụ</p> </a
+            ><a href=""> <p>Thế giới tự nhiên</p> </a
+            ><a href=""> <p>Thiết bị</p> </a
+            ><a href="">
+              <p>Cửa sổ tri thức</p>
+            </a>
+          </div>
+        </div>
+        <!-- <br /> -->
+        <div class="container-box">
+          <div class="content-box1">
+            <img
+              src="./pictures/medium/m14.webp"
+              alt=" "
+              style="width: 500px; height: 300px; margin-left: 10px"
+            />
             <a href=" ">
-              <h3>
-                Châu Âu ra tuyên bố chung phản đối ý tưởng sáp nhập Greenland
-                của ông Trump
+              <h2>Việt Nam giành ba Giải thưởng Số ASEAN 2026</h2>
+            </a>
+            <a href=" "
+              ><p>
+                Ba đại diện của Việt Nam được xướng tên tại Giải thưởng Số ASEAN
+                2026 (ASEAN Digital Award - ADA), diễn ra tối 15/1.
+              </p></a
+            >
+          </div>
+          <hr />
+          <div class="content-box2">
+            <div class="">
+              <img src="./pictures/medium/m15.webp" alt="" />
+              <a href=" "
+                >Phi hành đoàn trở về trong lần sơ tán y tế đầu tiên từ ISS</a
+              >
+            </div>
+            <hr />
+            <div>
+              <img src="./pictures/medium/m16.webp" alt="" />
+              <a href=" "
+                >Phó tổng thư ký Liên Hợp Quốc: ASEAN sẽ góp phần định hình
+                tương lai số toàn cầu</a
+              >
+            </div>
+          </div>
+          <hr />
+          <div class="content-box3">
+            <div style="margin-top: 0px">
+              <img src="./pictures/medium/m17.webp" alt="" />
+              <a href=" "
+                >Qualcomm sẽ mở phòng nghiên cứu AI tại biên ở Hà Nội</a
+              >
+            </div>
+            <hr />
+            <div>
+              <img src="./pictures/medium/m18.webp" alt="" />
+              <a href=" "
+                >Qualcomm sẽ mở phòng nghiên cứu AI tại biên ở Hà Nội</a
+              >
+            </div>
+            <hr />
+            <div>
+              <img src="./pictures/medium/m19.webp" alt="" />
+              <a href=" "
+                >Qualcomm sẽ mở phòng nghiên cứu AI tại biên ở Hà Nội</a
+              >
+            </div>
+            <hr />
+            <div>
+              <img src="./pictures/medium/m20.webp" alt="" />
+              <a href=" "
+                >Qualcomm sẽ mở phòng nghiên cứu AI tại biên ở Hà Nội</a
+              >
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="footer-box">
+          <a href=" ">
+            <img src="./pictures/medium/logo-hoinghi.svg " alt="" />
+            <span>HỘI NGHỊ BỘ TRƯỞNG SỐ<br />ASEAN 2026</span>
+          </a>
+          <h4>
+            <img src="./pictures/medium/m21.webp" alt="" />
+            <a href=" "
+              >Thủ tướng: ASEAN cần tăng cường niềm tin số, xây dựng thể chế
+              thích ứng
+            </a>
+          </h4>
+          <h4>
+            <img src="./pictures/medium/m22.webp" alt="" />
+            <a href=" "
+              >Việt Nam muốn Trung Quốc chia sẻ kinh nghiệm phát triển AI, 5G
+            </a>
+          </h4>
+        </div>
+        <br />
+      </div>
+      <br /><br /><br /><br /><br />
+      <div class="shorts-container">
+        <div class="short-nav">
+          <a href="" style="margin-left: 0px">
+            <img
+              src="./pictures/medium/vnego.png"
+              alt=""
+              style="width: 110px; height: 24px"
+            />
+          </a>
+          <a href=" ">Shorts</a>
+          <a href=" ">Discover</a>
+        </div>
+        <br />
+        <div class="short-vids">
+          <div class="vid" style="margin-left: 0px">
+            <video class="hover-vid" muted loop>
+              <source src="./vid/v1.mp4" type="video/mp4" />
+            </video>
+            <img src="./vid/im1.png" alt="" />
+          </div>
+          <div class="vid">
+            <video class="hover-vid" muted loop>
+              <source src="./vid/v2.mp4" type="video/mp4" />
+            </video>
+            <img src="./vid/im2.png" alt="" />
+          </div>
+          <div class="vid">
+            <video class="hover-vid" muted loop>
+              <source src="./vid/v3.mp4" type="video/mp4" />
+            </video>
+            <img src="./vid/im3.png" alt="" />
+          </div>
+          <div class="vid">
+            <video class="hover-vid" muted loop>
+              <source src="./vid/v4.mp4" type="video/mp4" />
+            </video>
+            <img src="./vid/im4.png" alt="" />
+          </div>
+          <div class="vid">
+            <video class="hover-vid" muted loop>
+              <source src="./vid/v5.mp4" type="video/mp4" />
+            </video>
+            <img src="./vid/im5.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <div class="podcasts">
+        <div class="podcast-nav">
+          <a href=" ">Podcasts</a>
+          <a href=" ">VnExpress hôm nay </a>
+          <a href=" ">Giải mã</a>
+          <a href=" ">Hộp đen</a>
+          <a href=" ">Hồ sơ tội ác</a>
+          <a href=" ">Tài chính cá nhân</a>
+          <a href=" ">Thầm thì</a>
+        </div>
+        <div class="content-podcast">
+          <div>
+            <a href=" ">
+              <img src="./podcasts/m1.webp" alt="" />
+              <p>Việt Nam học được gì từ tín nhiệm xã hội của Trung Quốc?</p>
+            </a>
+          </div>
+          <div>
+            <a href=" ">
+              <img src="./podcasts/m2.webp" alt="" />
+              <p>Hóa tử tù vì chiếc đồng hồ đánh rơi</p>
+            </a>
+          </div>
+          <div>
+            <a href=" ">
+              <img src="./podcasts/m3.webp" alt="" />
+              <p>Vodcast | Nữ CEO và cú cược 'Anh trai vượt ngàn chông gai'</p>
+            </a>
+          </div>
+          <div>
+            <a href=" ">
+              <img src="./podcasts/m4.webp" alt="" />
+              <p>Bỏ giấc mơ mua nhà, dốc tiền thuê nơi ở 'chất'</p>
+            </a>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+
+      <div class="box-catagory-container">
+        <div class="left-box-catagory">
+          <div class="left-box-catagory-top">
+            <div class="box-catagory-content">
+              <nav>
+                <a href=" ">Pháp luật</a>
+                <a href=" ">Hồ sơ phá án</a>
+                <a href=" ">Tư vấn</a>
+              </nav>
+
+              <img src="././pictures/business-img/b2.webp" alt="" />
+
+              <a href=" " class="title-box"
+                >Nữ giám đốc điều hành xưởng sản xuất mỹ phẩm giả</a
+              >
+              <p>
+                <b>Quảng Ninh</b> - Vũ Thị Thu Hà bị cáo buộc cầm đầu đường dây
+                sản xuất mỹ phẩm giả quy mô lớn trong Cụm công nghiệp Hà Khánh.
+              </p>
+              <hr />
+              <ul>
+                <li><a href=" ">Shipper bị bắt vì hãm hại bé gái </a></li>
+                <hr />
+                <li>
+                  <a href=" "
+                    >Bà chủ nhà hàng bị cáo buộc lừa 3,5 tỷ đồng để chơi chứng
+                    khoán
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <hr />
+
+            <div class="box-catagory-content" style="margin-left: 30px">
+              <nav>
+                <a href=" ">Ý kiến</a>
+              </nav>
+
+              <img src="./pictures/b2.webp" alt="" />
+              <a href=" " class="title-box">
+                Lỗ cắm đầu vì mua nhà hơn chục tỷ nhưng sau 7 năm 'lời' 2 tỷ
+                đồng
+              </a>
+              <p>
+                Nếu mua bằng tiền tiết kiệm thì lợi nhuận thấp hơn lãi ngân
+                hàng, mua bằng tiền vay thì lỗ 'cắm đầu'.
+              </p>
+              <hr />
+              <ul>
+                <li>
+                  <a href=" "
+                    >Không nhận ra U23 Việt Nam trong trận thua 0-3 Trung Quốc
+                  </a>
+                </li>
+                <hr />
+                <li>
+                  <a href=" "
+                    >Tôi thất vọng vì hội phụ huynh góp tiền thuê người dọn vệ
+                    sinh phòng học lớp 4
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br />
+          <hr />
+
+          <div class="left-box-catagory-bot">
+            <div class="box-catagory-content">
+              <nav>
+                <a href=" ">Thời sự</a>
+                <a href=" ">Chính trị</a>
+                <a href=" ">Kỷ nguyên mới</a>
+                <a href=" ">Dân sinh</a>
+              </nav>
+
+              <img src="./pictures/b3.webp" alt="" />
+
+              <a href=" " class="title-box">Miền Bắc giảm 12 độ C</a>
+              <p>
+                Trong ngày đầu tiên của đợt không khí lạnh, nhiệt độ thấp nhất
+                đo được tại Mẫu Sơn 2,5 độ C, Hà Nội 12 độ C, giảm mạnh so với
+                hôm qua.
+              </p>
+              <hr />
+              <ul>
+                <li>
+                  <a href=" ">Ba người tháo chạy khỏi ôtô 5 chỗ đang cháy </a>
+                </li>
+                <hr />
+                <li>
+                  <a href=" "
+                    >Phí đi cao tốc Cần Thơ - Cà Mau thấp nhất 99.000 đồng
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <hr />
+
+            <div class="box-catagory-content" style="margin-left: 30px">
+              <nav>
+                <a href=" ">Thế giới</a>
+                <a href=" ">Tư liệu</a>
+                <a href=" ">Phân tích</a>
+              </nav>
+
+              <img src="./pictures/b4.webp" alt="" />
+              <a href=" " class="title-box">
+                Hàng trăm nhân viên công nghệ Mỹ yêu cầu sếp 'gọi cho Nhà Trắng'
+                vì ICE
+              </a>
+              <p>
+                Hàng trăm nhân viên tại các tập đoàn công nghệ lớn của Mỹ kiến
+                nghị các CEO gây áp lực lên Tổng thống Trump để rút các đặc vụ
+                ICE trong chiến dịch truy quét nhập cư.
+              </p>
+              <hr />
+              <ul>
+                <li>
+                  <a href=" ">Trúng số 100.000 USD nhờ 'linh cảm' </a>
+                </li>
+                <hr />
+                <li>
+                  <a href=" "
+                    >Xuất hiện video 'tên lửa S-400 Nga lao vào nhà dân'
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-box-catagory">
+          <div class="right-box-catagory-container">
+            <nav style="margin-bottom: 10px"><a href=" ">Sự kiện</a></nav>
+            <div class="right-box-catagory-content">
+              <div>
+                <img src="./pictures/b5.webp" alt="" />
+                <a href=" "
+                  ><p>
+                    Chỉ số đổi mới sáng tạo cấp địa phương 2025 - PII 2025
+                  </p></a
+                >
+              </div>
+              <div>
+                <img src="./pictures/b6.webp" alt="" />
+                <a href=" "><p>Car Awards - Giải thưởng ôtô của năm 2025</p></a>
+              </div>
+              <div>
+                <img src="./pictures/b7.webp" alt="" />
+                <a href=" "><p>VnExpress Runner of The Year 2025</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+      </div>
+      <br /><br />
+      <div class="dl-xe">
+        <nav style="margin-bottom: 20px">
+          <a href=" ">Xe</a>
+          <a href=" ">Thị trường</a>
+          <a href=" ">Xe điện</a>
+          <a href=" ">Diễn đàn</a>
+          <a href=" ">Car Award 2025</a>
+          <a href=" ">V-Car</a>
+          <a href=" ">V-Bike</a>
+          <a href=" ">Cầm lái</a>
+          <a href=" ">Thi lí thuyết</a>
+          <a href=" ">Thi mô phỏng</a>
+        </nav>
+        <div class="dl-xe-content">
+          <div class="dlxc1">
+            <img
+              src="./pictures/d6.webp"
+              alt=""
+              style="width: 500px; height: 300px"
+            />
+            <a href=" "
+              ><h3>
+                Nữ du khách Việt thuê 'soái ca' bế trượt tuyết ở Cáp Nhĩ Tân
               </h3>
             </a>
-          </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a1.webp" alt="" />
-              <p>
-                Lãnh đạo Đan Mạch, Anh, Đức, Pháp và các nước khác ra tuyên bố
-                phản đối việc Tổng thống Trump muốn sáp nhập đảo Greenland vào
-                Mỹ, kêu gọi cùng đảm bảo an ninh tại Bắc Cực.
+
+            <a href=" "
+              ><p>
+                Trung Quốc-Khách Việt chi khoảng 3,8 triệu đồng thuê các vận
+                động viên nam bế hoặc cõng khi trượt tuyết tại khu nghỉ dưỡng
+                Yabuli, tỉnh Hắc Long Giang để tận hưởng cảm giác mới lạ.
               </p>
             </a>
           </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>
-                Từ 2026 không ghi thông tin đất đang bị thế chấp vào sổ đỏ
+
+          <hr />
+
+          <div class="dlxc2">
+            <div>
+              <img src="./pictures/d7.webp" alt="" />
+              <a href=" "
+                ><p>'Sợ kiệt sức thì đừng lái xe ra đường, kể cả có bằng'</p></a
+              >
+            </div>
+            <hr />
+            <div>
+              <video
+                src="./vid/v7.mp4"
+                muted
+                loop
+                autoplay
+                style="
+                  width: 280px;
+                  height: 150px;
+                  margin-top: 15px;
+                  margin-bottom: 10px;
+                "
+              ></video>
+              <a href=" "
+                ><p>Nữ du khách nghi bị đàn chó hoang Australia cắn chết</p></a
+              >
+            </div>
+          </div>
+          <hr />
+
+          <div class="dlxc4">
+            <div class="tra-cuu">
+              <p>Tra cứu phạt nguội giao thông</p>
+              <div style="margin-top: 15px">
+                <input
+                  type="text"
+                  name="tra-cuu-phat-nguoi"
+                  id="tra-cuu-phat-nguoi"
+                  placeholder="Ví dụ: 29A123456"
+                  required
+                  pattern="^[0-9]{2}[A-Z]{1,2}[0-9]{4,6}$"
+                />
+                <button type="submit" onclick="">Tra cứu</button>
+              </div>
+            </div>
+            <div>
+              <a href=" "
+                >Ford tăng trưởng gần 20% tại thị trường Việt Nam 2025
+              </a>
+              <img src="./pictures/d8.webp" alt="" />
+            </div>
+            <div>
+              <a href=" "
+                >Những thương hiệu ôtô Trung Quốc bán nhiều nhất ở châu Âu</a
+              >
+              <img src="./pictures/d9.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="dl-xe">
+        <nav style="margin-bottom: 20px">
+          <a href=" ">Du lịch</a>
+          <a href=" ">Điểm đến</a>
+          <a href=" ">Ẩm thực</a>
+          <a href=" ">Dấu chân</a>
+          <a href=" ">Tư vấn</a>
+          <a href=" ">Cẩm nang</a>
+          <a href=" ">Ảnh</a>
+        </nav>
+        <div class="dl-xe-content">
+          <div class="dlxc1">
+            <video src="./vid/v6.mp4" autoplay muted loop></video>
+            <a href=" "
+              ><h3>
+                Nữ du khách Việt thuê 'soái ca' bế trượt tuyết ở Cáp Nhĩ Tân
               </h3>
             </a>
-          </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a2.webp" alt="" />
-              <p>
-                Thông tin thế chấp quyền sử dụng đất, tài sản gắn liền với đất
-                sẽ không còn được ghi trực tiếp trên sổ đỏ mà được cập nhật vào
-                cơ sở dữ liệu đất đai.
+
+            <a href=" "
+              ><p>
+                Trung Quốc-Khách Việt chi khoảng 3,8 triệu đồng thuê các vận
+                động viên nam bế hoặc cõng khi trượt tuyết tại khu nghỉ dưỡng
+                Yabuli, tỉnh Hắc Long Giang để tận hưởng cảm giác mới lạ.
               </p>
             </a>
           </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>Chủ hộ kinh doanh có thể giao bố mẹ, vợ chồng làm kế toán</h3>
-            </a>
+
+          <hr />
+
+          <div class="dlxc2">
+            <div>
+              <img src="./pictures/d1.webp" alt="" />
+              <a href=" "
+                ><p>Vì sao thành phố New York có biệt danh 'Big Apple'?</p></a
+              >
+            </div>
+            <hr />
+            <div>
+              <img src="./pictures/d2.webp" alt="" style="margin-top: 15px" />
+              <a href=" "
+                ><p>Nữ du khách nghi bị đàn chó hoang Australia cắn chết</p></a
+              >
+            </div>
           </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a3.webp" alt="" />
-              <p>
-                Ngoài tự ghi chép sổ sách, chủ hộ kinh doanh có thể giao cho
-                người thân trong gia đình (vợ chồng, bố mẹ, em ruột…) đảm nhận
-                công việc kế toán.
-              </p>
-            </a>
+          <hr />
+
+          <div class="dlxc3">
+            <div>
+              <a href=" "
+                >Quán mì vằn thắn ở phố cổ Hà Nội đóng cửa hai giờ mỗi năm</a
+              >
+              <img src="./pictures/d3.webp" alt="" />
+            </div>
+            <div>
+              <a href=" ">Huế được vinh danh 'Điểm đến trong nước năm 2025'</a>
+              <img src="./pictures/d4.webp" alt="" />
+            </div>
+            <div>
+              <a href=" ">Quốc gia châu Âu mất 45 phút đi hết chiều dọc</a>
+              <img src="./pictures/d5.webp" alt="" />
+            </div>
           </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>Việt Nam đạt cột mốc lịch sử trước Jordan ở cấp U23</h3>
-            </a>
+        </div>
+      </div>
+      <div class="thu-gian">
+        <div class="thu-gian-nav">
+          <nav>
+            <a href=" "> Tâm sự </a>
+            <a href=" ">Hẹn hò</a>
+          </nav>
+          <div class="thu-gian-content">
+            <img src="./pictures/t5.webp" alt="" style="margin-bottom: 10px" />
+            <a href=" "
+              ><h3 style="margin-bottom: 10px">
+                Mẹ chồng hỏi mượn 13 cây vàng của tôi nhưng không chịu viết giấy
+                xác nhận
+              </h3></a
+            >
+            <a href=" "
+              ><p>
+                Mẹ chồng đổi thái độ ngay, bảo "mẹ con trong nhà còn giấy tờ"
+                rồi tỏ vẻ không vui, cho rằng tôi không tin mẹ.
+              </p></a
+            >
+
+            <ul>
+              <li>
+                <a href="">
+                  Tôi 'nhảy số' nhanh khi kiếm tiền nhưng 'gà mờ' trong tình yêu
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Bạn gái chưa muốn cưới vì băn khoăn việc tôi có 3 cái răng giả
+                </a>
+              </li>
+              <li>
+                <a href="">Xuống nước làm lành nhưng chồng không biết điều</a>
+              </li>
+              <li>
+                <a href=""
+                  >Chồng ngoại tình là cơ hội để tôi thay đổi cuộc sống tẻ nhạt
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a4.webp" alt="" />
-              <p>
-                Arab SaudiChiến thắng 2-0 ở trận ra quân bảng A U23 châu Á 2026
-                hôm nay là lần đầu Việt Nam hạ Jordan ở cấp độ này, sau bốn cuộc
-                đối đầu.
-              </p>
-            </a>
+        </div>
+        <div class="thu-gian-nav" style="margin-left: 25px">
+          <nav>
+            <a href=" ">Thư giãn</a>
+            <a href=" ">Cười</a>
+            <a href=" ">Đố vui</a>
+            <a href=" ">Chuyện lạ</a>
+            <a href=" ">Crossword</a>
+          </nav>
+          <div class="thu-gian-content">
+            <img src="./pictures/t6.webp" alt="" style="margin-bottom: 10px" />
+            <a href=" "
+              ><h3 style="margin-bottom: 10px">
+                Lý do thủ môn U23 Hàn Quốc 6 lần liên tiếp bay về bên phải
+              </h3></a
+            >
+            <a href=" "
+              ><p>
+                Trong loạt sút luân lưu tranh hạng ba với U23 Việt Nam, thủ môn
+                U23 Hàn Quốc đã 6 lần liên tiếp bay người về bên phải, tại sao?
+              </p></a
+            >
+
+            <ul>
+              <li>
+                <a href=""> Cao Văn Bình biến U23 Hàn Quốc thành 'chú Tư' </a>
+              </li>
+              <li>
+                <a href="">
+                  Năm con giáp làm đâu trúng đó, lộc lá đầy tay vào cuối tuần
+                </a>
+              </li>
+              <li>
+                <a href="">Đố bạn bắt trúng chữ bắt đầu bằng chữ Y </a>
+              </li>
+              <li>
+                <a href="">Quốc gia duy nhất Đông Nam Á có chữ trên quốc kỳ </a>
+              </li>
+            </ul>
           </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>Hà Nội đề nghị dừng chạy tàu qua phố cà phê đường tàu</h3>
-            </a>
+        </div>
+      </div>
+      <br /><br />
+      <div class="slider">
+        <nav>
+          <a href=" ">Ảnh</a>
+        </nav>
+        <div class="slides">
+          <div class="slide active">
+            <img src="./pictures/slider1.webp" alt="" />
+            <div class="slide-content">
+              <a href=" "
+                ><h3>
+                  Linh vật ngựa khổng lồ trước khi ra đường hoa Nguyễn Huệ
+                </h3></a
+              >
+              <a href=" "
+                ><p>
+                  Ngựa cao hơn 11 m tính cả giá đỡ có thể cử động đầu và chân,
+                  tạo hình dũng mãnh, hoàn thiện căn bản sau gần một tháng thi
+                  công.
+                </p></a
+              >
+            </div>
           </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a5.webp" alt="" />
-              <p>
-                UBND Hà Nội vừa đề nghị điều chỉnh tổ chức chạy tàu, trong đó
-                tàu khách từ phía nam dừng tại ga Hà Nội, tàu khách từ phía bắc
-                sẽ dừng ở ga Gia Lâm.
-              </p>
-            </a>
+          <div class="slide">
+            <img src="./pictures/slider2.webp" alt="" />
+            <div class="slide-content">
+              <a href=" "><h3>Đảo mèo giữa lòng Hà Nội</h3></a>
+              <a href=" "
+                ><p>
+                  Đàn mèo hơn 30 con cư ngụ biệt lập trên hòn đảo giữa hồ công
+                  viên Thống Nhất từ nhiều năm qua, ít người biết tới.
+                </p></a
+              >
+            </div>
           </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>Thu ngân sách 2025 đạt kỷ lục 2,65 triệu tỷ đồng</h3>
-            </a>
+          <div class="slide">
+            <img src="./pictures/slider3.webp" alt="" />
+            <div class="slide-content">
+              <a href=" "
+                ><h3>
+                  Mẫu tên lửa 'xuyên thủng mọi lá chắn' Nga khiến Ukraine lo
+                  ngại
+                </h3></a
+              >
+              <a href=" "
+                ><p>
+                  Tên lửa hành trình 9M729 đủ sức vươn tới mọi nơi trong lãnh
+                  thổ Ukraine, từng được tướng Mỹ đánh giá là xuyên thủng được
+                  nhiều lá chắn hiện đại.
+                </p></a
+              >
+            </div>
           </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a6.webp" alt="" />
-              <p>
-                Số thu ngân sách Nhà nước năm nay ghi nhận mức kỷ lục, vượt 2,65
-                triệu tỷ đồng, tương đương 20,7% quy mô nền kinh tế (GDP), theo
-                Bộ Tài chính.
-              </p>
-            </a>
+        </div>
+        <button class="prev" onclick="ChangeSlide(-1)">&#8743;</button>
+        <button class="next" onclick="ChangeSlide(1)">&#8744;</button>
+      </div>
+      <br />
+      <br /><br />
+      <div class="container-box-left-aside">
+        <div>
+          <div class="spotlight">
+            <nav>
+              <a href=" ">Spotlight</a>
+            </nav>
+            <div class="spotlight-content">
+              <img src="./pictures/s1.webp" alt="" />
+              <div>
+                <a href=" "
+                  ><h3>
+                    Người kế nghiệp Biti's: Cuộc thử lửa vượt bóng di sản
+                  </h3></a
+                >
+                <a href=" "
+                  ><p>
+                    Là con gái đầu của nhà sáng lập Biti’s, Vưu Lệ Quyên từng
+                    kháng cự hoàn cảnh của mình, cho rằng áp lực từ gia đình quá
+                    khắc nghiệt, và rơi vào khủng hoảng hiện sinh khi nhận ra
+                    mình đã sống quá lâu theo kỳ vọng của người khác.
+                  </p></a
+                >
+              </div>
+            </div>
           </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>
-                Dàn khí tài hiện đại và nghìn cảnh sát diễn tập bảo vệ Đại hội
-                Đảng
-              </h3>
-            </a>
+          <br /><br />
+          <hr />
+          <div class="Infographics">
+            <nav>
+              <a href=" ">Infographics</a>
+            </nav>
+            <div class="Infographics-content">
+              <div>
+                <img src="./pictures/info1.webp" alt="" />
+                <a href=" "
+                  ><h3>
+                    33 Ủy viên Trung ương khóa 14 khối Quân đội, Công an
+                  </h3></a
+                >
+              </div>
+              <div>
+                <img src="./pictures/info2.webp" alt="" />
+                <a href=" "
+                  ><h3>24 Thứ trưởng là Ủy viên Trung ương khóa XIV</h3></a
+                >
+              </div>
+            </div>
           </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a7.webp" alt="" />
-              <p>
-                Hà Nội Ngày 6/1, các lực lượng tinh nhuệ thuộc Bộ Công an và
-                Công an TP Hà Nội, cùng dàn xe đặc chủng, khí tài hiện đại đã
-                hội quân diễn tập, sẵn sàng bảo vệ tuyệt đối an toàn cho Đại hội
-                Đảng toàn quốc lần thứ XIV.
-              </p>
-            </a>
+          <br />
+          <hr />
+          <br /><br />
+          <div class="xem-nhieu">
+            <nav>
+              <a href=" "> Xem nhiều </a>
+            </nav>
+            <div class="xem-nhieu-content">
+              <div>
+                <div>
+                  <p class="digit">1</p>
+                  <p>Thiết kế đường vượt biển Cần Giờ - Vũng Tàu</p>
+                </div>
+                <div>
+                  <p class="digit">2</p>
+                  <p>
+                    7 cầu thủ nhập tịch gian lận của Malaysia được thi đấu trở
+                    lại
+                  </p>
+                </div>
+                <div>
+                  <p class="digit">3</p>
+                  <p>Hơn 43% lao động đóng BHXH thấp hơn thu nhập thực tế</p>
+                </div>
+                <div style="border-bottom: none">
+                  <p class="digit">4</p>
+                  <p>
+                    Bộ Y tế khuyến cáo không ăn trái cây bị dơi, chim cắn phòng
+                    virus Nipah
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div>
+                <div>
+                  <p class="digit">5</p>
+                  <p>
+                    Thị trưởng Philippines thoát chết sau vụ tấn công vào xe bọc
+                    thép
+                  </p>
+                </div>
+                <div>
+                  <p class="digit">6</p>
+                  <p>
+                    Công an treo thưởng thông tin tố giác hai kẻ cướp ngân hàng
+                    ở Gia Lai
+                  </p>
+                </div>
+                <div>
+                  <p class="digit">7</p>
+                  <p>
+                    Việt Nam 'cơ bản đàm phán xong' với Nga về điện hạt nhân
+                    Ninh Thuận 1
+                  </p>
+                </div>
+                <div style="border-bottom: none">
+                  <p class="digit">8</p>
+                  <p>Giáo sư Vũ Hà Văn gia nhập đại học số 1 châu Á</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>
-                Loạt nghị sĩ Venezuela bắt chước cử chỉ 'chiến thắng' của ông
-                Maduro
-              </h3>
-            </a>
+        </div>
+
+        <hr />
+        <div class="blank-box"></div>
+      </div>
+
+      <br /><br />
+      <div class="body-business">
+        <div class="container-business swiper">
+          <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+              <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                  <img
+                    src="./pictures/business-img/b1.webp"
+                    alt=""
+                    class="card-image"
+                  />
+
+                  <h2 class="card-title">
+                    VPBank hợp tác DMX ra mắt thẻ tín dụng
+                  </h2>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                  <img
+                    src="./pictures/business-img/b2.webp"
+                    alt=""
+                    class="card-image"
+                  />
+
+                  <h2 class="card-title">
+                    ABBank tặng 100 nghìn cây quế cho người dân Nghệ An
+                  </h2>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                  <img
+                    src="./pictures/business-img/b3.webp"
+                    alt=""
+                    class="card-image"
+                  />
+
+                  <h2 class="card-title">
+                    Ống thép luồn dây điện EMT đạt tiêu chuẩn Mỹ
+                  </h2>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                  <img
+                    src="./pictures/business-img/b4.webp"
+                    alt=""
+                    class="card-image"
+                  />
+
+                  <h2 class="card-title">
+                    Carlsberg Việt Nam 11 năm thực hiện chương trình Tết cho
+                    cộng đồng
+                  </h2>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                  <img
+                    src="./pictures/business-img/b5.webp"
+                    alt=""
+                    class="card-image"
+                  />
+
+                  <h2 class="card-title">
+                    Dấu mốc kỷ niệm 18 năm tại Crossfire Thanks Day 2025
+                  </h2>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                  <img
+                    src="./pictures/business-img/b6.webp"
+                    alt=""
+                    class="card-image"
+                  />
+
+                  <h2 class="card-title">
+                    Thủ tướng Vanuatu tham quan nhà máy nhôm Grando
+                  </h2>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                  <img
+                    src="./pictures/business-img/b7.webp"
+                    alt=""
+                    class="card-image"
+                  />
+
+                  <h2 class="card-title">HAR mở rộng hệ thống tại TP HCM</h2>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                  <img
+                    src="./pictures/business-img/b8.webp"
+                    alt=""
+                    class="card-image"
+                  />
+
+                  <h2 class="card-title">
+                    Lý do các chuyên gia pha chế Việt chuộng táo Pháp
+                  </h2>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                  <img
+                    src="./pictures/business-img/b9.webp"
+                    alt=""
+                    class="card-image"
+                  />
+
+                  <h2 class="card-title">
+                    KLC Seafood nhận giải 'Sản phẩm và dịch vụ chất lượng quốc
+                    gia'
+                  </h2>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                  <img
+                    src="./pictures/business-img/b10.webp"
+                    alt=""
+                    class="card-image"
+                  />
+
+                  <h2 class="card-title">
+                    Lukfook Jewellery khai trương 5 cửa hàng tại Việt Nam
+                  </h2>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                  <img
+                    src="./pictures/business-img/b11.webp"
+                    alt=""
+                    class="card-image"
+                  />
+
+                  <h2 class="card-title">
+                    Á Đông ứng dụng công nghệ cơ khí trong không gian bán lẻ
+                  </h2>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                  <img
+                    src="./pictures/business-img/b12.webp"
+                    alt=""
+                    class="card-image"
+                  />
+
+                  <h2 class="card-title">
+                    MiLife giới thiệu thiết bị sưởi ấm cho gia đình Việt
+                  </h2>
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
           </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a8.webp" alt="" />
-              <p>
-                Chủ tịch quốc hội Rodriguez cùng nhiều nghị sĩ Venezuela giơ hai
-                ngón tay hình chữ V, giống cử chỉ "chiến thắng" của Tổng thống
-                Maduro khi ông bị đưa đến New
-              </p>
-            </a>
-          </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>Mỹ từ bỏ cáo buộc về 'băng đảng ma túy' Venezuela</h3>
-            </a>
-          </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a9.webp" alt="" />
-              <p>
-                Bộ Tư pháp Mỹ rút lại tuyên bố rằng Cartel de los Soles là băng
-                đảng ma túy của Venezuela, cáo buộc vốn là nền tảng cho lệnh bắt
-                Tổng thống Maduro.
-              </p>
-            </a>
-          </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>
-                Trăm cảnh sát vây bắt đường dây lừa đảo, đánh bạc 9.300 tỷ đồng
-              </h3>
-            </a>
-          </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a10.webp" alt="" />
-              <p>
-                <i>Hưng Yên</i>-Hàng trăm cảnh sát đồng loạt đột kích các địa
-                điểm tại 5 tỉnh thành, bắt Nguyễn Chính Nghĩa và đường dây tội
-                phạm lừa đảo, đánh bạc với quy mô lên tới 9.300
-              </p>
-            </a>
-          </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>Phát hiện bộ xương người đã khô ở Lâm Đồng</h3>
-            </a>
-          </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a11.webp" alt="" />
-              <p>
-                Bộ xương người được phát hiện nằm ở bãi đất hoang, xa khu dân
-                cư, thuộc phường Tiến Thành (TP Phan Thiết, Bình Thuận cũ), hiện
-                chưa rõ danh tính.
-              </p>
-            </a>
-          </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>1,4 triệu thanh niên 'ba không'</h3>
-            </a>
-          </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a12.webp" alt="" />
-              <p>
-                Ba tháng cuối năm 2025, cả nước có khoảng 1,4 triệu thanh niên
-                trong tình trạng không việc làm, không học tập, không tham gia
-                đào tạo nghề, chiếm 10% tổng số thanh
-              </p>
-            </a>
-          </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>
-                Cựu cục trưởng khai không bắt đưa tiền nhưng hỏi 'mức cảm ơn'
-                với mỗi hồ sơ
-              </h3>
-            </a>
-          </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a13.webp" alt="" />
-              <p>
-                Cựu cục trưởng An toàn thực phẩm Trần Việt Nga khai không chỉ
-                đạo chuyên viên thu tiền cơ chế mà chỉ gọi cấp dưới sang hỏi:
-                "Mỗi bộ hồ sơ có cảm ơn được lãnh đạo Cục 2 triệu đồng không?"
-              </p>
-            </a>
-          </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>
-                Khách đập phá ôtô công nghệ sau mâu thuẫn 'trả thêm tiền vệ sinh
-                xe'
-              </h3>
-            </a>
-          </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a14.png" alt="" />
-              <p>
-                TP HCM-La Thiên Bảo, 33 tuổi, bị cáo buộc đánh tài xế, đá gãy
-                gương chiếu hậu ôtô công nghệ sau mâu thuẫn phải trả thêm tiền
-                vệ sinh xe do bạn anh ta nôn ói.
-              </p>
-            </a>
-          </div>
-        </aside>
-        <aside class="container-left-aside">
-          <div class="content-aside">
-            <a href=" ">
-              <h3>Chelsea bổ nhiệm HLV Rosenior</h3>
-            </a>
-          </div>
-          <div class="content-aside content-aside-bot">
-            <a href=" ">
-              <img src="./pictures/aside/a15.webp" alt="" />
-              <p>
-                Chelsea xác nhận ký hợp đồng với HLV 41 tuổi người Anh Liam
-                Rosenior chiều 6/1, thời hạn tới năm 2032, để thay thế Enzo
-                Maresca.
-              </p>
-            </a>
-          </div>
-        </aside>
+        </div>
       </div>
     </main>
+    <br /><br />
+    <!-- <hr /> -->
+    <br /><br />
+    <footer class="footer-container">
+      <div class="inner-footer">
+        <ul class="list-menu-footer" style="font-weight: bold">
+          <li class="item-menu">
+            <a href="https://vnexpress.net/" title="Trang chủ">Trang chủ</a>
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/anh">Ảnh</a>
+          </li>
+          <li class="item-menu">
+            <a
+              href="https://vnexpress.net/infographics#vn_source=Home&amp;vn_campaign=Footer&amp;vn_medium=Menu-Infographics&amp;vn_term=Desktop&amp;vn_aid=1000000"
+              title="Infographics"
+              >Infographics</a
+            >
+          </li>
+        </ul>
+        <ul class="list-menu-footer">
+          <li class="item-menu">
+            <a href="https://vnexpress.net/vne-go" title="VnE-GO">VnE-GO</a>
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/thoi-su" title="Thời sự">Thời sự</a>
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/the-gioi" title="Thế giới"
+              >Thế giới</a
+            >
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/kinh-doanh" title="Kinh doanh"
+              >Kinh doanh</a
+            >
+          </li>
+          <li class="item-menu">
+            <a
+              href="https://vnexpress.net/khoa-hoc-cong-nghe"
+              title="Khoa học công nghệ"
+              >Khoa học công nghệ</a
+            >
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/goc-nhin" title="Góc nhìn"
+              >Góc nhìn</a
+            >
+          </li>
+        </ul>
+        <ul class="list-menu-footer">
+          <li class="item-menu">
+            <a href="https://vnexpress.net/giai-tri" title="Giải trí"
+              >Giải trí</a
+            >
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/phap-luat" title="Pháp luật"
+              >Pháp luật</a
+            >
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/bat-dong-san" title="Bất động sản"
+              >Bất động sản</a
+            >
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/suc-khoe" title="Sức khỏe"
+              >Sức khỏe</a
+            >
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/the-thao" title="Thể thao"
+              >Thể thao</a
+            >
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/giao-duc" title="Giáo dục"
+              >Giáo dục</a
+            >
+          </li>
+        </ul>
+        <ul class="list-menu-footer">
+          <li class="item-menu">
+            <a href="https://vnexpress.net/doi-song" title="Đời sống"
+              >Đời sống</a
+            >
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/oto-xe-may" title="Xe">Xe</a>
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/du-lich" title="Du lịch">Du lịch</a>
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/y-kien" title="Ý kiến">Ý kiến</a>
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/tam-su" title="Tâm sự">Tâm sự</a>
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/thu-gian" title="Thư giãn"
+              >Thư giãn</a
+            >
+          </li>
+        </ul>
+        <ul class="list-menu-footer" style="border-right: #cac2c2 0.5px solid">
+          <li class="item-menu">
+            <a href="https://vnexpress.net/tin-tuc-24h" title="Mới nhất"
+              >Mới nhất</a
+            >
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/tin-xem-nhieu" title="Xem nhiều"
+              >Xem nhiều</a
+            >
+          </li>
+          <li class="item-menu">
+            <a href="https://vnexpress.net/tin-nong" title="Tin nóng"
+              >Tin nóng</a
+            >
+          </li>
+          <li
+            class="item-menu"
+            style="padding-top: 15px; border-top: 1px solid #e5e5e5"
+          >
+            <a
+              title="Newsletter"
+              href="https://vnexpress.net/newsletters/gioi-thieu"
+              >Newsletter</a
+            >
+          </li>
+          <li class="item-menu">
+            <a title="Lịch vạn niên" href="https://vnexpress.net/lich-van-nien"
+              >Lịch vạn niên</a
+            >
+          </li>
+          <li class="item-menu">
+            <a
+              title="Rao vặt"
+              href="https://raovat.vnexpress.net/?utm_campaign=VNEXPRESS&amp;utm_source=footer&amp;utm_medium=menu&amp;_gl=1*q5n8mf*_gcl_au*NDA0NTYyOS4xNzQ0NTk0NzAx"
+              >Rao vặt</a
+            >
+          </li>
+        </ul>
+        <div class="wrap-contact">
+          <div class="contact download-app">
+            <p>Tải ứng dụng</p>
+            <div>
+              <a href=" " class="vne-app" title="VnExpress">VnExpress</a>
+              <a href=" " class="International-vne" title="International"
+                >International</a
+              >
+            </div>
+          </div>
+          <div class="contact">
+            <p>Liên hệ</p>
+            <div>
+              <a title="Liên hệ tòa soạn" href=" " class="mail">Tòa soạn</a>
+              <a title="Liên hệ quảng cáo" href=" " class="ads">Quảng cáo</a>
+            </div>
+          </div>
+          <hr />
+          <div class="hotline">
+            <p>Đường dây nóng</p>
+            <div>
+              <div class="left">
+                <strong>083.888.0123</strong>
+                <p>(Hà Nội)</p>
+              </div>
+              <div class="right">
+                <strong>082.233.3555</strong>
+                <p>(TP. Hồ Chí Minh)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div
+        class="letter-footer"
+        style="
+          display: flex;
+          background-color: #e2ddddd0;
+          border-radius: 5px;
+          padding: 15px 0px;
+        "
+      >
+        <div
+          class="box-newsletter-new__left"
+          style="
+            font-family: Arial, Helvetica, sans-serif;
+            width: 50%;
+            margin-left: 10px;
+          "
+        >
+          <div class="mail-box">
+            <span class="material-symbols-outlined" style="color: yellow">
+              mail
+            </span>
+            <div
+              class="lbl"
+              style="
+                color: #635f5f;
+                margin-left: 10px;
+                align-content: center;
+                font-size: 18px;
+              "
+            >
+              VnExpress Newsletters
+            </div>
+          </div>
+          <h3 class="title" style="font-size: 23px; margin: 5px 0px">
+            Đừng bỏ lỡ tin tức quan trọng!
+          </h3>
+          <div style="font-size: 15px">
+            Nhận tóm tắt tin tức nổi bật, hấp dẫn nhất 24 giờ qua trên
+            VnExpress.
+          </div>
+        </div>
+        <div class="box-newsletter-new__right" style="display: flex">
+          <div class="flexbox" style="display: flex">
+            <div class="login-socail" style="display: flex">
+              <a href=" " id="myvne_google_login_footer">
+                <img
+                  src="https://s1.vnecdn.net/vnexpress/restruct/i/v9776/icons/icon-google.svg"
+                  alt="Đăng nhập bằng Google"
+                  style="margin-right: 10px; padding-top: 16px"
+                />
+              </a>
+              <a href=" " id="myvne_facebook_login_footer">
+                <img
+                  src="https://s1.vnecdn.net/vnexpress/restruct/i/v9776/icons/icon-facebook.svg"
+                  alt="Đăng nhập bằng Facebook"
+                  style="margin-right: 10px; padding-top: 16px"
+                />
+              </a>
+            </div>
+            <div class="or" style="padding-top: 20px">
+              <span style="text-align: center; margin-right: 10px">Hoặc</span>
+            </div>
 
-    <footer></footer>
+            <div class="form-newsletter">
+              <div class="form-group">
+                <div class="form-register" style="display: flex">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="fEmail"
+                    placeholder="Địa chỉ Email..."
+                  />
+
+                  <button class="btn">
+                    <a
+                      id="register_mail_footer"
+                      href=" "
+                      style="
+                        text-decoration: none;
+                        color: #e5e5e5;
+                        width: 100px;
+                        height: 52px;
+                      "
+                      >Đăng ký</a
+                    >
+                  </button>
+                </div>
+                <div
+                  class="note"
+                  style="margin-top: 10px; font-size: 13px; margin-left: 145px"
+                >
+                  *Khi đăng ký, bạn đồng ý
+                  <a
+                    class="link"
+                    href=" "
+                    style="font-size: 11px; text-decoration: underline"
+                    >điều khoản</a
+                  >
+                  của VnExpress
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+
+      <div class="copyright">
+        <div class="copyright-left">
+          <p style="margin-top: 15px">
+            <a href=" " style="text-decoration: none; color: #000"
+              >Báo điện tử</a
+            >
+          </p>
+          <img
+            src="https://s1.vnecdn.net/vnexpress/restruct/i/v9776/v2_2019/pc/graphics/logo.svg"
+            alt=""
+            style="
+              width: 140px;
+              height: 25px;
+              margin-left: 20px;
+              margin-top: 10px;
+            "
+          />
+        </div>
+        <div class="copyright-right">
+          <span><a href=" ">Điều khoản sử dụng</a></span>
+          <span><a href="">Chính sách bảo mật</a></span>
+          <span><a href=" ">Cookies</a></span>
+          <span><a href=" ">RSS</a></span>
+          <span>Theo dõi VnExpress trên</span>
+          <span
+            ><img
+              src="https://img.freepik.com/vector-cao-cap/bieu-tuong-mau-facebook_1209566-7.jpg?semt=ais_hybrid&w=740&q=80"
+              alt="" />
+            <img
+              src="https://img.freepik.com/vector-cao-cap/vector-logo-twitter-x-mau-trang-moi-tren-nen-den_744381-866.jpg"
+              alt="" />
+            <img
+              src="https://img.freepik.com/vector-cao-cap/logo-youtube-mau-do-logo-mang-xa-hoi_197792-1803.jpg"
+              alt="" />
+            <img
+              src="https://img.freepik.com/psd-cao-cap/logo-tiktok_1131634-487.jpg?semt=ais_hybrid&w=740&q=80"
+              alt=""
+          /></span>
+        </div>
+      </div>
+      <div class="copyright-footer">
+        <p>
+          <strong>Báo tiếng Việt nhiều người xem nhất</strong><br />Thuộc Bộ
+          Khoa học và Công nghệ<br />Số giấy phép: 548/GP-BTTTT do Bộ Thông tin
+          và Truyền thông cấp ngày 24/08/2021
+        </p>
+        <p style="text-align: justify">
+          Tổng biên tập: Phạm Văn Hiếu<br />Địa chỉ: Tầng 10, Tòa A FPT Tower,
+          số 10 Phạm Văn Bạch, phường Cầu Giấy, Hà Nội<br />Điện thoại: 024 7300
+          8899 - máy lẻ 4500<br /><a href=" ">Email: webmaster@vnexpress.net</a>
+        </p>
+        <p style="text-align: right">
+          © 1997-2026. Toàn bộ bản quyền thuộc VnExpress
+        </p>
+      </div>
+    </footer>
+    <br /><br /><br />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
