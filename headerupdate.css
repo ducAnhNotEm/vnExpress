@@ -1,0 +1,184 @@
+header {
+  padding: 0;
+  position: relative;
+  height: 50px;
+  display: flex;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  width: 45%;
+  left: 5%;
+  /* width: 70%; */
+}
+
+.weather-location {
+  position: relative;
+  display: flex;
+  width: 550px;
+  left: 30%;
+}
+.logo-vnexpress {
+  position: absolute;
+  left: 0;
+  width: 173px;
+  height: 50px;
+}
+.location {
+  position: absolute;
+  left: 1%;
+  top: 20px;
+}
+.dropdown {
+  cursor: pointer;
+
+  font-size: 17px;
+  display: inline-block;
+  /* padding-right: 10px; */
+  /* border-right: 1px solid #000; */
+  padding-right: 15px;
+}
+.current {
+  display: inline-block;
+  max-width: 90px;
+  line-height: 1;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+.menu {
+  display: none;
+  position: absolute;
+  top: 70%;
+  left: -20px;
+  width: 200px;
+  max-height: 300px;
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  z-index: 10;
+  border: 1px solid #000;
+  text-align: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.menu li {
+  background: #fff;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+.menu li:hover {
+  background: wheat;
+}
+.dropdown:hover .menu {
+  display: block;
+}
+.search-bar {
+  width: 100%;
+  /* margin: 0 auto; */
+  padding: 10px 0px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+.search-icon {
+  margin-right: 15px;
+  position: absolute;
+  left: 0;
+}
+#search-input {
+  border: 0;
+  outline: 0;
+  padding: 3px 3px 3px 35px;
+  background: transparent;
+  height: 20px;
+  color: rgb(0, 0, 0);
+}
+#search-input::placeholder {
+  color: rgb(99, 65, 65);
+  margin-left: 10px;
+}
+.info-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 5px;
+  height: 50px;
+  left: 16%;
+  width: 200px;
+  color: rgb(152, 152, 152);
+}
+.info-wrapper p {
+  width: 90px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.temperature {
+  font-weight: lighter;
+  line-height: 1;
+  position: relative;
+}
+
+.temperature::after {
+  content: "o";
+  position: absolute;
+  font-size: 10px;
+}
+.dateTime {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 60%;
+  top: 5px;
+  color: rgb(152, 152, 152);
+}
+.header-right {
+  position: absolute;
+  left: 57%;
+  display: flex;
+  width: 45%;
+  top: 20px;
+}
+.header-right a {
+  text-decoration: none;
+  color: rgb(152, 152, 152);
+  margin-right: 15px;
+}
+.menu1 {
+  display: none;
+  position: absolute;
+  top: 70%;
+  left: 50px;
+  width: 150px;
+  max-height: 300px;
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  z-index: 10;
+  border: 1px solid #000;
+  text-align: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.nav-bar {
+  position: relative;
+  display: flex;
+}
+.nav-bar > a:nth-of-type(1) {
+  border-right: 1px solid rgb(152, 152, 152);
+  padding-right: 15px;
+}
+
+.loginBar {
+  margin-left: 15px;
+}
+.user {
+  margin: 0px 15px;
+}

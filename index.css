@@ -4,45 +4,56 @@
   box-sizing: border-box;
 }
 header {
-  width: 100%;
-  padding: 10px 50px;
+  padding: 0;
   position: relative;
-  z-index: 1;
-}
-
-.bg-logo {
-  position: relative;
-  display: inline-block;
-}
-
-#anh {
-  position: absolute;
-  z-index: 1;
-}
-.weather {
+  height: 70px;
   display: flex;
 }
-#temp {
-  margin-top: 5px;
-  margin-left: 10px;
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  width: 45%;
+  left: 5%;
+  /* width: 70%; */
 }
+
 .weather-location {
   position: relative;
-  top: 15px;
-  left: 200px;
-  z-index: 2;
+  display: flex;
+  width: 550px;
+  left: 30%;
+  height: 50px;
+}
+.logo-vnexpress {
+  position: absolute;
+  left: 0;
+  width: 173px;
+  height: 50px;
+}
+.location {
+  position: absolute;
+  left: 1%;
+  top: 20px;
 }
 .dropdown {
   cursor: pointer;
-  position: relative;
-  font-size: 14px;
+
+  font-size: 17px;
   display: inline-block;
-  padding-right: 10px;
-  border-right: 1px solid #000;
+  /* padding-right: 10px; */
+  /* border-right: 1px solid #000; */
+  padding-right: 15px;
 }
 .current {
-  background: transparent;
-  padding-bottom: 10px;
+  display: inline-block;
+  max-width: 90px;
+  line-height: 1;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
 }
 .menu {
   display: none;
@@ -58,6 +69,7 @@ header {
   border: 1px solid #000;
   text-align: left;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .menu li {
   background: #fff;
@@ -70,69 +82,124 @@ header {
 .dropdown:hover .menu {
   display: block;
 }
-
-#picWea {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  background: transparent;
-}
-.weather {
-  position: relative;
-  top: -20px;
-  left: 75px;
-  font-size: 14px;
-  z-index: 2;
-}
-.nav-bar {
+.search-bar {
+  width: 100%;
+  /* margin: 0 auto; */
+  padding: 10px 0px;
   display: flex;
   position: relative;
-  left: 50%;
-  width: 400px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+.search-icon {
+  margin-right: 15px;
+  position: absolute;
+  left: 0;
+}
+#search-input {
+  border: 0;
+  outline: 0;
+  padding: 3px 3px 3px 35px;
+  background: transparent;
   height: 20px;
-  bottom: 20px;
+  color: rgb(0, 0, 0);
 }
-.nav-bar a {
-  text-decoration: none;
-  color: black;
-}
-.current1 {
-  border-left: 1px solid #000;
-  padding-left: 10px;
+#search-input::placeholder {
+  color: rgb(99, 65, 65);
   margin-left: 10px;
 }
-#international {
-  display: inline-flex;
-  width: 115px;
-  height: 20px;
-  border-right: #000 1px solid;
-}
-#logo-vnexpress {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-#loginBar {
-  display: flex;
+.info-wrapper {
   position: absolute;
-  left: 69%;
-  bottom: 40%;
-  width: 200px;
+  display: flex;
+  flex-direction: row;
+  top: 5px;
+  height: 50px;
+  left: 16%;
+  width: 250px;
+  color: rgb(152, 152, 152);
 }
-#loginBar img {
-  width: 20px;
-  height: 20px;
-  margin-left: 15px;
+.info-wrapper p {
+  width: 90px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 10px;
 }
-#loginBar a {
+
+.temperature {
+  font-weight: lighter;
+  line-height: 1;
+  position: relative;
+}
+
+.temperature::after {
+  content: "o";
+  position: absolute;
+  font-size: 10px;
+}
+.dateTime {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 67%;
+  top: 5px;
+  color: rgb(152, 152, 152);
+}
+.dateTime p {
+  align-content: center;
+  margin-bottom: 10px;
+}
+.header-right {
+  position: absolute;
+  left: 60%;
+  display: flex;
+  width: 40%;
+  top: 25px;
+}
+.header-right a {
   text-decoration: none;
-  color: black;
+  color: rgb(152, 152, 152);
+  margin-right: 15px;
+}
+.menu1 {
+  display: none;
+  position: absolute;
+  top: 70%;
+  left: 50px;
+  width: 150px;
+  max-height: 300px;
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  z-index: 10;
+  border: 1px solid #000;
+  text-align: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.nav-bar {
+  position: relative;
+  display: flex;
+}
+.nav-bar > a:nth-of-type(1) {
+  border-right: 1px solid rgb(152, 152, 152);
+  padding-right: 15px;
+}
+
+.loginBar {
   margin-left: 15px;
 }
+.user {
+  margin: 0px 15px;
+}
+
 main {
   position: relative;
   z-index: 0;
   /* width: auto; */
+  /* top: 20px; */
 }
 .NAV {
   width: 100%;
@@ -1705,8 +1772,8 @@ main {
   list-style: none;
   margin: 10px;
 }
-.inner-footer {
-}
+/* .inner-footer {
+} */
 .list-menu-footer {
   width: 170px;
   padding-right: 30px;

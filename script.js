@@ -1,3 +1,52 @@
+const APP_ID = "b759e015b33376b5a5eeb25c452f54aa";
+const DEFAULT_VALUE = "--";
+const currentLocation = document.querySelector(".current-location");
+const current = document.querySelector(".current");
+const searchInput = document.querySelector("#search-input");
+const cityName = document.querySelector(".city-name");
+const weatherState = document.querySelector(".weather-state");
+const weatherIcon = document.querySelector(".weather-icon");
+const temperature = document.querySelector(".temperature");
+
+searchInput.addEventListener("change", (e) => {
+  fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&appid=${APP_ID}&units=metric&lang=vi`,
+  ).then(async (res) => {
+    const data = await res.json();
+    console.log("[Search Input]", data);
+    currentLocation.innerHTML = `Vị trí hiện tại : ${data.name}`;
+    current.innerHTML = `${data.name} ▾`;
+    cityName.innerHTML = data.name || DEFAULT_VALUE;
+    weatherState.innerHTML = data.weather[0].description || DEFAULT_VALUE;
+    weatherIcon.setAttribute(
+      "src",
+      `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`,
+    );
+    temperature.innerHTML = Math.round(data.main.temp) || DEFAULT_VALUE;
+  });
+});
+
+const today = new Date();
+// dung dictionary
+const days = {
+  0: "Chủ Nhật",
+  1: "Thứ Hai",
+  2: "Thứ Ba",
+  3: "Thứ Tư",
+  4: "Thứ Năm",
+  5: "Thứ Sáu",
+  6: "Thứ Bảy",
+};
+const dayOfWeek = days[today.getDay()];
+const hours = String(today.getHours()).padStart(2, "0");
+const minutes = String(today.getMinutes()).padStart(2, "0");
+document.querySelector(".time-box").innerHTML = `${hours}:${minutes} |`;
+const day = String(today.getDate()).padStart(2, "0");
+const month = String(today.getMonth() + 1).padStart(2, "0");
+const year = today.getFullYear();
+document.querySelector(".date-box").innerHTML =
+  `${dayOfWeek}/${day}/${month}/${year}`;
+
 document.querySelectorAll(".hover-vid").forEach((video) => {
   video.addEventListener("mouseenter", () => {
     video.play();

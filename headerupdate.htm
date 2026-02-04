@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="headerupdate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mail"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=cloud"
+    />
+    <script src="weather-api/weather-app/js/all.min.js"></script>
+    <script src="weather-api/weather-app/js/moment.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="weather-api/weather-app/index.css" /> -->
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <div class="logo-vnexpress">
+          <a href="https://vnexpress.net/">
+            <img
+              src="https://s1.vnecdn.net/vnexpress/restruct/i/v9758/v2_2019/pc/graphics/logo_tagline.svg"
+              alt="anh-vnexpress"
+              id="anh"
+            />
+          </a>
+        </div>
+
+        <div class="weather-location">
+          <div class="location">
+            <div class="dropdown">
+              <span class="current">Hà Nội ▾</span>
+
+              <ul class="menu">
+                <li style="border-bottom: 1px solid #000">
+                  <p style="font-size: 18px">Xác định vị trí hiện tại</p>
+                  <p style="font-size: 12px" class="current-location">
+                    Vị trí hiện tại : Hà Nội
+                  </p>
+                </li>
+                <li style="border-bottom: 1px solid #000">
+                  <div class="search-bar">
+                    <i class="fas fa-search search-icon"></i>
+                    <input
+                      type="text"
+                      name="search-city"
+                      id="search-input"
+                      placeholder="Tìm kiếm thành phố..."
+                      autocomplete="off"
+                    />
+                  </div>
+                </li>
+                <li data-value="HN">Hà Nội</li>
+                <li data-value="HCM">Hồ Chí Minh</li>
+                <li data-value="DN">Đà Nẵng</li>
+                <li data-value="HP">Hải Phòng</li>
+                <li data-value="CT">Cần Thơ</li>
+                <li data-value="TQ">Tuyên Quang</li>
+                <li data-value="LC">Lào Cai</li>
+                <li data-value="TN">Thái Nguyên</li>
+                <li data-value="PT">Phú Thọ</li>
+                <li data-value="BN">Bắc Ninh</li>
+                <li data-value="HY">Hưng Yên</li>
+                <li data-value="NB">Ninh Bình</li>
+                <li data-value="QT">Quảng Trị</li>
+                <li data-value="QNGAI">Quảng Ngãi</li>
+                <li data-value="GL">Gia Lai</li>
+                <li data-value="KH">Khánh Hòa</li>
+                <li data-value="LD">Lâm Đồng</li>
+                <li data-value="DLAK">Đắk Lắk</li>
+                <li data-value="DNAI">Đồng Nai</li>
+                <li data-value="TNINH">Tây Ninh</li>
+                <li data-value="VL">Vĩnh Long</li>
+                <li data-value="ĐT">Đồng Tháp</li>
+                <li data-value="CM">Cà Mau</li>
+                <li data-value="AG">An Giang</li>
+                <li data-value="TPH">TP. Huế</li>
+                <li data-value="LChau">Lai Châu</li>
+                <li data-value="DB">Điện Biên</li>
+                <li data-value="SL">Sơn La</li>
+                <li data-value="LS">Lạng Sơn</li>
+                <li data-value="QNinh">Quảng Ninh</li>
+                <li data-value="TH">Thanh Hóa</li>
+                <li data-value="NA">Nghệ An</li>
+                <li data-value="HTinh">Hà Tĩnh</li>
+                <li data-value="CB">Cao Bằng</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="info-wrapper">
+            <p class="city-name">--</p>
+            <p class="weather-state" style="margin-left: 7px">--</p>
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="weather icon"
+              class="weather-icon"
+            />
+            <p class="temperature" style="width: 16px">--</p>
+          </div>
+
+          <div class="dateTime">
+            <p class="time-box" style="padding-right: 10px">--:--</p>
+            <p class="date-box">--/--/----</p>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="nav-bar">
+          <a href=" ">Mới nhất</a>
+          <div class="dropdown">
+            <span
+              class="current1"
+              style="
+                color: rgb(152, 152, 152);
+                border-right: 1px solid rgb(152, 152, 152);
+                padding-right: 15px;
+              "
+              >Tin theo khu vực</span
+            >
+            <ul class="menu menu1">
+              <li><a href=" " style="color: black">Hà Nội</a></li>
+              <li><a href=" " style="color: black">TP.Hồ Chí Minh</a></li>
+            </ul>
+          </div>
+          <div
+            class="international"
+            style="display: flex; border-right: 1px solid rgb(152, 152, 152)"
+          >
+            <img
+              src="./pictures/logo.png"
+              alt="logo-vnexpress"
+              id="logo-vnexpress"
+              style="width: 22px; height: 20px; margin-right: 5px"
+            />
+            <a href=" ">International</a>
+          </div>
+        </div>
+        <div class="loginBar">
+          <i class="fas fa-search"></i>
+          <i class="far fa-user user"></i>
+          <a href=" ">Đăng nhập</a>
+          <i class="far fa-bell"></i>
+        </div>
+      </div>
+    </header>
+    <script src="weather-api/weather-app/js/index.js"></script>
+  </body>
+</html>
