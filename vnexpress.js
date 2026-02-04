@@ -16,7 +16,7 @@ searchInput.addEventListener("change", (e) => {
     console.log("[Search Input]", data);
     currentLocation.innerHTML = `Vị trí hiện tại : ${data.name}`;
     current.innerHTML = `${data.name} ▾`;
-    cityName.innerHTML = data.name || DEFAULT_VALUE;
+    // cityName.innerHTML = data.name || DEFAULT_VALUE;
     weatherState.innerHTML = data.weather[0].description || DEFAULT_VALUE;
     weatherIcon.setAttribute(
       "src",
@@ -45,7 +45,7 @@ const day = String(today.getDate()).padStart(2, "0");
 const month = String(today.getMonth() + 1).padStart(2, "0");
 const year = today.getFullYear();
 document.querySelector(".date-box").innerHTML =
-  `${dayOfWeek}/${day}/${month}/${year}`;
+  `${dayOfWeek} ${"   "}/  ${day}/${month}/${year}`;
 
 document.querySelectorAll(".hover-vid").forEach((video) => {
   video.addEventListener("mouseenter", () => {
